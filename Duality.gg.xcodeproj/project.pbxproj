@@ -13,6 +13,8 @@
 		6334280A2701463E00D52040 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633428082701463E00D52040 /* Main.storyboard */; };
 		6334280C2701463F00D52040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6334280B2701463F00D52040 /* Assets.xcassets */; };
 		6334280F2701463F00D52040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6334280D2701463F00D52040 /* LaunchScreen.storyboard */; };
+		6334281A2701551800D52040 /* Planets.png in Resources */ = {isa = PBXBuildFile; fileRef = 633428182701551800D52040 /* Planets.png */; };
+		6334281B2701551800D52040 /* Duality.gg.png in Resources */ = {isa = PBXBuildFile; fileRef = 633428192701551800D52040 /* Duality.gg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		6334280B2701463F00D52040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6334280E2701463F00D52040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		633428102701463F00D52040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		633428182701551800D52040 /* Planets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Planets.png; sourceTree = "<group>"; };
+		633428192701551800D52040 /* Duality.gg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Duality.gg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		633428012701463E00D52040 /* Duality.gg */ = {
 			isa = PBXGroup;
 			children = (
+				63342817270154FA00D52040 /* Assets */,
 				633428022701463E00D52040 /* AppDelegate.swift */,
 				633428042701463E00D52040 /* SceneDelegate.swift */,
 				633428062701463E00D52040 /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				633428102701463F00D52040 /* Info.plist */,
 			);
 			path = Duality.gg;
+			sourceTree = "<group>";
+		};
+		63342817270154FA00D52040 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				633428192701551800D52040 /* Duality.gg.png */,
+				633428182701551800D52040 /* Planets.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +139,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6334280F2701463F00D52040 /* LaunchScreen.storyboard in Resources */,
+				6334281B2701551800D52040 /* Duality.gg.png in Resources */,
+				6334281A2701551800D52040 /* Planets.png in Resources */,
 				6334280C2701463F00D52040 /* Assets.xcassets in Resources */,
 				6334280A2701463E00D52040 /* Main.storyboard in Resources */,
 			);

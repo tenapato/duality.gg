@@ -31,7 +31,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="GT7-Ub-3i5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="380" id="4hS-xp-Ym6"/>
                             <constraint firstItem="YH1-Ia-Oxo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="63z-Ao-KpI"/>
+                            <constraint firstItem="YH1-Ia-Oxo" firstAttribute="top" secondItem="GT7-Ub-3i5" secondAttribute="bottom" constant="58" id="MLt-BS-DHy"/>
+                            <constraint firstItem="YH1-Ia-Oxo" firstAttribute="top" secondItem="GT7-Ub-3i5" secondAttribute="bottom" constant="58" id="OZV-Vc-aQq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YH1-Ia-Oxo" secondAttribute="bottom" constant="169" id="X42-NR-GlC"/>
                             <constraint firstItem="GT7-Ub-3i5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wUI-Gh-kL5"/>
                         </constraints>
                     </view>
@@ -104,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zOL-K4-sSP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2881" y="177"/>
+            <point key="canvasLocation" x="2810" y="210"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="vRb-hN-eMz">
