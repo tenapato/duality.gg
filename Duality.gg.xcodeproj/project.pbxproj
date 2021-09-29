@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63149E2F270526B100FB77B0 /* profile_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 63149E2E270526B100FB77B0 /* profile_bg.png */; };
 		633428032701463E00D52040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633428022701463E00D52040 /* AppDelegate.swift */; };
 		633428052701463E00D52040 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633428042701463E00D52040 /* SceneDelegate.swift */; };
 		633428072701463E00D52040 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633428062701463E00D52040 /* ViewController.swift */; };
@@ -21,9 +22,12 @@
 		63534A102704E81B00018831 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63534A0F2704E81B00018831 /* LeaderboardViewController.swift */; };
 		63534A152704F4AE00018831 /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63534A142704F4AE00018831 /* Leaderboard.swift */; };
 		63534A182704F4BC00018831 /* LeaderboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63534A172704F4BC00018831 /* LeaderboardController.swift */; };
+		63534A1D2705205B00018831 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63534A1C2705205B00018831 /* ProfileViewController.swift */; };
+		63534A202705216F00018831 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63534A1F2705216F00018831 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63149E2E270526B100FB77B0 /* profile_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_bg.png; sourceTree = "<group>"; };
 		633427FF2701463E00D52040 /* Duality.gg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duality.gg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		633428022701463E00D52040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		633428042701463E00D52040 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		63534A0F2704E81B00018831 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		63534A142704F4AE00018831 /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
 		63534A172704F4BC00018831 /* LeaderboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardController.swift; sourceTree = "<group>"; };
+		63534A1C2705205B00018831 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		63534A1F2705216F00018831 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,7 @@
 		63342817270154FA00D52040 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				63149E2E270526B100FB77B0 /* profile_bg.png */,
 				63534A042704D92F00018831 /* Leaderboard */,
 				633428192701551800D52040 /* Duality.gg.png */,
 				633428182701551800D52040 /* Planets.png */,
@@ -110,6 +117,8 @@
 			children = (
 				63534A0B2704E32400018831 /* LeaderboardTableViewController.swift */,
 				63534A0F2704E81B00018831 /* LeaderboardViewController.swift */,
+				63534A1C2705205B00018831 /* ProfileViewController.swift */,
+				63534A1F2705216F00018831 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -182,6 +191,7 @@
 			files = (
 				6334280F2701463F00D52040 /* LaunchScreen.storyboard in Resources */,
 				6334281B2701551800D52040 /* Duality.gg.png in Resources */,
+				63149E2F270526B100FB77B0 /* profile_bg.png in Resources */,
 				6334281A2701551800D52040 /* Planets.png in Resources */,
 				6334280C2701463F00D52040 /* Assets.xcassets in Resources */,
 				6334280A2701463E00D52040 /* Main.storyboard in Resources */,
@@ -197,12 +207,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63534A202705216F00018831 /* LoginViewController.swift in Sources */,
 				633428072701463E00D52040 /* ViewController.swift in Sources */,
 				63534A182704F4BC00018831 /* LeaderboardController.swift in Sources */,
 				63534A152704F4AE00018831 /* Leaderboard.swift in Sources */,
 				633428032701463E00D52040 /* AppDelegate.swift in Sources */,
 				63534A102704E81B00018831 /* LeaderboardViewController.swift in Sources */,
 				633428052701463E00D52040 /* SceneDelegate.swift in Sources */,
+				63534A1D2705205B00018831 /* ProfileViewController.swift in Sources */,
 				63534A0C2704E32400018831 /* LeaderboardTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
