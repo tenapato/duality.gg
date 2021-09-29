@@ -15,6 +15,8 @@
 		6334280F2701463F00D52040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6334280D2701463F00D52040 /* LaunchScreen.storyboard */; };
 		6334281A2701551800D52040 /* Planets.png in Resources */ = {isa = PBXBuildFile; fileRef = 633428182701551800D52040 /* Planets.png */; };
 		6334281B2701551800D52040 /* Duality.gg.png in Resources */ = {isa = PBXBuildFile; fileRef = 633428192701551800D52040 /* Duality.gg.png */; };
+		63534A072704D94600018831 /* Leaderboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 63534A052704D94600018831 /* Leaderboard.png */; };
+		63534A082704D94600018831 /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 63534A062704D94600018831 /* BG.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		633428102701463F00D52040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		633428182701551800D52040 /* Planets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Planets.png; sourceTree = "<group>"; };
 		633428192701551800D52040 /* Duality.gg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Duality.gg.png; sourceTree = "<group>"; };
+		63534A052704D94600018831 /* Leaderboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leaderboard.png; sourceTree = "<group>"; };
+		63534A062704D94600018831 /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +79,20 @@
 		63342817270154FA00D52040 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				63534A042704D92F00018831 /* Leaderboard */,
 				633428192701551800D52040 /* Duality.gg.png */,
 				633428182701551800D52040 /* Planets.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		63534A042704D92F00018831 /* Leaderboard */ = {
+			isa = PBXGroup;
+			children = (
+				63534A062704D94600018831 /* BG.png */,
+				63534A052704D94600018831 /* Leaderboard.png */,
+			);
+			path = Leaderboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +157,8 @@
 				6334281A2701551800D52040 /* Planets.png in Resources */,
 				6334280C2701463F00D52040 /* Assets.xcassets in Resources */,
 				6334280A2701463E00D52040 /* Main.storyboard in Resources */,
+				63534A072704D94600018831 /* Leaderboard.png in Resources */,
+				63534A082704D94600018831 /* BG.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
