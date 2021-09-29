@@ -10,7 +10,10 @@ import UIKit
 class LeaderboardTableViewController: UITableViewController {
 
     
-    var datos = ["1","2"]
+    //var datos = ["1","2"]
+    var datos = [Leaderboard]()
+    var lbControlador = LeaderboardController()
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,7 +22,31 @@ class LeaderboardTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        lbControlador.fetchLeaderboard{ (resultado) in
+            switch resultado{
+            case .success(let listaLb):self.updateGUI(listaLb: listaLb)
+            case .failure(let error):self.displayError(e: error)
+            }
+            
+        }
     }
+    
+    func updateGUI(listaLb: Leaderboards){
+        DispatchQueue.main.async {
+            self.datos = listaLb
+            self.tableView.reloadData()
+        }
+        
+    }
+    func displayError(e:Error){
+        DispatchQueue.main.async {
+            let alerta =  UIAlertController(title: "Error de conexion", message: e.localizedDescription, preferredStyle: .alert)
+            alerta.addAction(UIAlertAction(title: "Cerrar", style: .default, handler: nil))
+            self.present(alerta, animated: true, completion: nil)
+        }
+    }
+
+    
 
     // MARK: - Table view data source
 
@@ -36,11 +63,18 @@ class LeaderboardTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "zelda", for: indexPath)
-
+        
         // Configure the cell...
         cell.textLabel?.textColor = UIColor.black
         //cell.backgroundColor = UIColor.clear
-        cell.textLabel?.text = datos[indexPath.row]
+        //cell.textLabel?.text = datos[indexPath.row]
+        //cell.textLabel?.text = datos[indexPath.row].players[0].gameName
+        
+        for p in datos[indexPath.row].players{
+            cell.textLabel?.text = p.gameName
+        }
+        
+        
         return cell
     }
     
