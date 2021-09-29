@@ -15,6 +15,12 @@
 		6334280F2701463F00D52040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6334280D2701463F00D52040 /* LaunchScreen.storyboard */; };
 		6334281A2701551800D52040 /* Planets.png in Resources */ = {isa = PBXBuildFile; fileRef = 633428182701551800D52040 /* Planets.png */; };
 		6334281B2701551800D52040 /* Duality.gg.png in Resources */ = {isa = PBXBuildFile; fileRef = 633428192701551800D52040 /* Duality.gg.png */; };
+		63534A072704D94600018831 /* Leaderboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 63534A052704D94600018831 /* Leaderboard.png */; };
+		63534A082704D94600018831 /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 63534A062704D94600018831 /* BG.png */; };
+		63534A0C2704E32400018831 /* LeaderboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63534A0B2704E32400018831 /* LeaderboardTableViewController.swift */; };
+		63534A102704E81B00018831 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63534A0F2704E81B00018831 /* LeaderboardViewController.swift */; };
+		63534A152704F4AE00018831 /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63534A142704F4AE00018831 /* Leaderboard.swift */; };
+		63534A182704F4BC00018831 /* LeaderboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63534A172704F4BC00018831 /* LeaderboardController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		633428102701463F00D52040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		633428182701551800D52040 /* Planets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Planets.png; sourceTree = "<group>"; };
 		633428192701551800D52040 /* Duality.gg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Duality.gg.png; sourceTree = "<group>"; };
+		63534A052704D94600018831 /* Leaderboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leaderboard.png; sourceTree = "<group>"; };
+		63534A062704D94600018831 /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = "<group>"; };
+		63534A0B2704E32400018831 /* LeaderboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewController.swift; sourceTree = "<group>"; };
+		63534A0F2704E81B00018831 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		63534A142704F4AE00018831 /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
+		63534A172704F4BC00018831 /* LeaderboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,8 @@
 		633428012701463E00D52040 /* Duality.gg */ = {
 			isa = PBXGroup;
 			children = (
+				63534A132704F4A100018831 /* Models */,
+				63534A0A2704E2FF00018831 /* Controllers */,
 				63342817270154FA00D52040 /* Assets */,
 				633428022701463E00D52040 /* AppDelegate.swift */,
 				633428042701463E00D52040 /* SceneDelegate.swift */,
@@ -75,10 +89,38 @@
 		63342817270154FA00D52040 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				63534A042704D92F00018831 /* Leaderboard */,
 				633428192701551800D52040 /* Duality.gg.png */,
 				633428182701551800D52040 /* Planets.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		63534A042704D92F00018831 /* Leaderboard */ = {
+			isa = PBXGroup;
+			children = (
+				63534A062704D94600018831 /* BG.png */,
+				63534A052704D94600018831 /* Leaderboard.png */,
+			);
+			path = Leaderboard;
+			sourceTree = "<group>";
+		};
+		63534A0A2704E2FF00018831 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				63534A0B2704E32400018831 /* LeaderboardTableViewController.swift */,
+				63534A0F2704E81B00018831 /* LeaderboardViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		63534A132704F4A100018831 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				63534A142704F4AE00018831 /* Leaderboard.swift */,
+				63534A172704F4BC00018831 /* LeaderboardController.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +185,8 @@
 				6334281A2701551800D52040 /* Planets.png in Resources */,
 				6334280C2701463F00D52040 /* Assets.xcassets in Resources */,
 				6334280A2701463E00D52040 /* Main.storyboard in Resources */,
+				63534A072704D94600018831 /* Leaderboard.png in Resources */,
+				63534A082704D94600018831 /* BG.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +198,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				633428072701463E00D52040 /* ViewController.swift in Sources */,
+				63534A182704F4BC00018831 /* LeaderboardController.swift in Sources */,
+				63534A152704F4AE00018831 /* Leaderboard.swift in Sources */,
 				633428032701463E00D52040 /* AppDelegate.swift in Sources */,
+				63534A102704E81B00018831 /* LeaderboardViewController.swift in Sources */,
 				633428052701463E00D52040 /* SceneDelegate.swift in Sources */,
+				63534A0C2704E32400018831 /* LeaderboardTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

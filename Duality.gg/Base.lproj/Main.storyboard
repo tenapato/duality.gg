@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v2G-2s-qMn">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -23,9 +23,6 @@
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YH1-Ia-Oxo">
                                 <rect key="frame" x="111" y="468" width="192" height="30"/>
                                 <state key="normal" title="Continue with out logging in"/>
-                                <connections>
-                                    <segue destination="v2G-2s-qMn" kind="presentation" modalPresentationStyle="fullScreen" id="sCB-Bx-Rrh"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -80,18 +77,67 @@
         <!--Leaderbord-->
         <scene sceneID="ggV-RD-sZJ">
             <objects>
-                <viewController id="k3l-82-kXt" sceneMemberID="viewController">
+                <viewController id="k3l-82-kXt" customClass="LeaderboardViewController" customModule="Duality_gg" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9gX-lD-ycc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Leaderboard.png" translatesAutoresizingMaskIntoConstraints="NO" id="oNq-Vg-AMA">
+                                <rect key="frame" x="-8.5" y="6" width="431" height="212"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oNq-Vg-AMA" secondAttribute="height" multiplier="431:212" id="6pD-VR-MfR"/>
+                                    <constraint firstAttribute="height" constant="212" id="bht-o1-rfr"/>
+                                    <constraint firstAttribute="width" constant="431" id="m8k-Xx-EbD"/>
+                                </constraints>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2S1-Pn-Qyr">
+                                <rect key="frame" x="29" y="185" width="356" height="526"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="Tcf-4y-nn8" kind="embed" id="UHL-MJ-2f2"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="SFb-FK-R7Q"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.08235294118" green="0.10980392160000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oNq-Vg-AMA" firstAttribute="centerX" secondItem="9gX-lD-ycc" secondAttribute="centerX" id="JA9-Dj-TUb"/>
+                            <constraint firstItem="oNq-Vg-AMA" firstAttribute="top" secondItem="9gX-lD-ycc" secondAttribute="top" constant="6" id="XPa-4B-ELq"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Leaderbord" image="textformat.123" catalog="system" id="xJ4-Ux-w0f"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZO-lt-wMK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1803" y="-208"/>
+            <point key="canvasLocation" x="1821.7391304347827" y="-277.23214285714283"/>
+        </scene>
+        <!--Leaderboard Table View Controller-->
+        <scene sceneID="Fnm-kz-hZ3">
+            <objects>
+                <tableViewController id="Tcf-4y-nn8" customClass="LeaderboardTableViewController" customModule="Duality_gg" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="L65-3a-B6C">
+                        <rect key="frame" x="0.0" y="0.0" width="356" height="526"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" id="NR8-Zv-bRc">
+                                <rect key="frame" x="0.0" y="28" width="356" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NR8-Zv-bRc" id="Vcm-0j-LSW">
+                                    <rect key="frame" x="0.0" y="0.0" width="356" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Tcf-4y-nn8" id="K8H-Z5-nNZ"/>
+                            <outlet property="delegate" destination="Tcf-4y-nn8" id="S28-RO-vGy"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m82-OJ-dv7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2699" y="-374"/>
         </scene>
         <!--Profile-->
         <scene sceneID="bHn-3W-1lI">
@@ -133,6 +179,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Leaderboard.png" width="1125" height="144"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="sum" catalog="system" width="102" height="128"/>
