@@ -80,7 +80,7 @@
         <!--Leaderbord-->
         <scene sceneID="ggV-RD-sZJ">
             <objects>
-                <viewController id="k3l-82-kXt" sceneMemberID="viewController">
+                <viewController id="k3l-82-kXt" customClass="LeaderboardViewController" customModule="Duality_gg" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9gX-lD-ycc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,6 +93,13 @@
                                     <constraint firstAttribute="width" constant="431" id="m8k-Xx-EbD"/>
                                 </constraints>
                             </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2S1-Pn-Qyr">
+                                <rect key="frame" x="29" y="185" width="356" height="526"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="Tcf-4y-nn8" kind="embed" id="UHL-MJ-2f2"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SFb-FK-R7Q"/>
                         <color key="backgroundColor" red="0.08235294118" green="0.10980392160000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -105,7 +112,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZO-lt-wMK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1802.8985507246377" y="-208.25892857142856"/>
+            <point key="canvasLocation" x="1821.7391304347827" y="-277.23214285714283"/>
+        </scene>
+        <!--Leaderboard Table View Controller-->
+        <scene sceneID="Fnm-kz-hZ3">
+            <objects>
+                <tableViewController id="Tcf-4y-nn8" customClass="LeaderboardTableViewController" customModule="Duality_gg" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="L65-3a-B6C">
+                        <rect key="frame" x="0.0" y="0.0" width="356" height="526"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zelda" id="NR8-Zv-bRc">
+                                <rect key="frame" x="0.0" y="28" width="356" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NR8-Zv-bRc" id="Vcm-0j-LSW">
+                                    <rect key="frame" x="0.0" y="0.0" width="356" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Tcf-4y-nn8" id="K8H-Z5-nNZ"/>
+                            <outlet property="delegate" destination="Tcf-4y-nn8" id="S28-RO-vGy"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m82-OJ-dv7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2699" y="-374"/>
         </scene>
         <!--Profile-->
         <scene sceneID="bHn-3W-1lI">
