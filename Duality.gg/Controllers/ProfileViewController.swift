@@ -9,6 +9,12 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     var userLoggedIn = true
+    
+    var datos = [UserElement]()
+    var userControlador = ProfileController()
+    
+    @IBOutlet weak var userName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,8 +26,41 @@ class ProfileViewController: UIViewController {
             //self.present(loginViewController, animated: true)
             
         }
+        userControlador.fetchUser{ (resultado) in
+            switch resultado{
+            case .success(let listaUser):self.updateGUI(listaUser: listaUser)
+            case .failure(let error):self.displayError(e: error)
+            }
+            
+        }
+        
+        
         
     }
+    
+    func updateGUI(listaUser: [UserElement]){
+        DispatchQueue.main.async {
+            self.datos = listaUser
+            //self.tableView.reloadData()
+            //print(self.datos)
+            self.userName.text = String(self.datos[0].gameName)
+        }
+        
+    }
+    func displayError(e:Error){
+        DispatchQueue.main.async {
+            let alerta =  UIAlertController(title: "Error de conexion", message: e.localizedDescription, preferredStyle: .alert)
+            alerta.addAction(UIAlertAction(title: "Cerrar", style: .default, handler: nil))
+            self.present(alerta, animated: true, completion: nil)
+        }
+    }
+    
+    
+    
+    
+    
+    
+   
     
     
     func notLoggedIn(){

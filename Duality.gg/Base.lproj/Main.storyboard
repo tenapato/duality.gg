@@ -169,7 +169,7 @@
                                     <constraint firstAttribute="width" constant="337" id="fKv-70-4De"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ASAP Pato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIQ-cg-Ake">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIQ-cg-Ake">
                                 <rect key="frame" x="96" y="180" width="134" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="EDX-wE-c05"/>
@@ -201,6 +201,17 @@
                                 <color key="textColor" red="1" green="0.27450980390000002" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gold.png" translatesAutoresizingMaskIntoConstraints="NO" id="6oV-W4-wmy">
+                                <rect key="frame" x="87" y="223" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6oV-W4-wmy" secondAttribute="height" multiplier="15:8" id="Fyv-Vj-dab"/>
+                                    <constraint firstAttribute="height" constant="128" id="UjN-z9-YGv"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="eCA-i0-rg3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="swU-c1-Cyd"/>
+                                    <constraint firstAttribute="width" constant="240" id="xvs-ti-pZe"/>
+                                    <constraint firstAttribute="width" secondItem="6oV-W4-wmy" secondAttribute="height" multiplier="15:8" id="y7R-EI-Pg2"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="87.5%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ew-0V-0Es">
                                 <rect key="frame" x="48" y="322" width="80" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
@@ -213,17 +224,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gold.png" translatesAutoresizingMaskIntoConstraints="NO" id="6oV-W4-wmy">
-                                <rect key="frame" x="87" y="223" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="6oV-W4-wmy" secondAttribute="height" multiplier="15:8" id="Fyv-Vj-dab"/>
-                                    <constraint firstAttribute="height" constant="128" id="UjN-z9-YGv"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="eCA-i0-rg3"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="swU-c1-Cyd"/>
-                                    <constraint firstAttribute="width" constant="240" id="xvs-ti-pZe"/>
-                                    <constraint firstAttribute="width" secondItem="6oV-W4-wmy" secondAttribute="height" multiplier="15:8" id="y7R-EI-Pg2"/>
-                                </constraints>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="RR_placeholder" text="75" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtL-ye-hJ1">
+                                <rect key="frame" x="193" y="269" width="28" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recent Matches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acc-OG-Yuq">
                                 <rect key="frame" x="13" y="398" width="202" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -247,6 +253,8 @@
                             <constraint firstItem="Hsi-AK-CEo" firstAttribute="top" secondItem="wmo-l0-7dw" secondAttribute="bottom" constant="35" id="MpR-Rw-DGU"/>
                             <constraint firstItem="dHR-Uf-UvJ" firstAttribute="centerX" secondItem="ph7-Hz-hkj" secondAttribute="centerX" constant="-120" id="QHZ-ZE-tsl"/>
                             <constraint firstItem="6oV-W4-wmy" firstAttribute="top" secondItem="IRW-95-fCJ" secondAttribute="bottom" constant="8" id="SyB-SR-tCA"/>
+                            <constraint firstItem="OtL-ye-hJ1" firstAttribute="centerX" secondItem="ph7-Hz-hkj" secondAttribute="centerX" id="U5r-PW-JaA"/>
+                            <constraint firstItem="OtL-ye-hJ1" firstAttribute="centerY" secondItem="ph7-Hz-hkj" secondAttribute="centerY" constant="-164.5" id="Ygi-nW-QtJ"/>
                             <constraint firstItem="4dh-ii-pyK" firstAttribute="centerY" secondItem="ph7-Hz-hkj" secondAttribute="centerY" constant="-141.5" id="aTD-wq-QCN"/>
                             <constraint firstItem="6Ew-0V-0Es" firstAttribute="centerX" secondItem="ph7-Hz-hkj" secondAttribute="centerX" constant="-119" id="cVu-Kz-rqp"/>
                             <constraint firstItem="6oV-W4-wmy" firstAttribute="centerX" secondItem="ph7-Hz-hkj" secondAttribute="centerX" id="eQg-pf-jzJ"/>
@@ -266,6 +274,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="BOP-mN-2jQ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="userName" destination="EIQ-cg-Ake" id="o9l-EO-926"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zOL-K4-sSP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -345,7 +356,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="g2X-rE-BDW"/>
+        <segue reference="y6p-nb-EXP"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Duality.gg.png" width="622" height="76"/>
