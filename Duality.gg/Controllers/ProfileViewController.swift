@@ -8,13 +8,13 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
+    var userLoggedIn = true
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let userLoggedIn = true
-        if userLoggedIn {
+        userLoggedIn = true
+        if userLoggedIn{
             notLoggedIn()
             //let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
             //self.present(loginViewController, animated: true)
