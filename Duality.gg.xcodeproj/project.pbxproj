@@ -46,6 +46,7 @@
 		639BBCE927062D1800ADD933 /* Map_ascent.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCE827062D1800ADD933 /* Map_ascent.png */; };
 		63D81FF6270671510004A743 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D81FF5270671510004A743 /* Profile.swift */; };
 		63D81FF9270671610004A743 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D81FF8270671610004A743 /* ProfileController.swift */; };
+		63EFE6552707847F00FAD1F2 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EFE6542707847F00FAD1F2 /* CalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		639BBCE827062D1800ADD933 /* Map_ascent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map_ascent.png; sourceTree = "<group>"; };
 		63D81FF5270671510004A743 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		63D81FF8270671610004A743 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		63EFE6542707847F00FAD1F2 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				63534A0F2704E81B00018831 /* LeaderboardViewController.swift */,
 				63534A1C2705205B00018831 /* ProfileViewController.swift */,
 				63534A1F2705216F00018831 /* LoginViewController.swift */,
+				63EFE6542707847F00FAD1F2 /* CalculatorViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				63D81FF9270671610004A743 /* ProfileController.swift in Sources */,
 				633428052701463E00D52040 /* SceneDelegate.swift in Sources */,
 				63534A1D2705205B00018831 /* ProfileViewController.swift in Sources */,
+				63EFE6552707847F00FAD1F2 /* CalculatorViewController.swift in Sources */,
 				63534A0C2704E32400018831 /* LeaderboardTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

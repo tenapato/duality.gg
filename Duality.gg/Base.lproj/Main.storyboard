@@ -44,7 +44,7 @@
         <!--Calculator-->
         <scene sceneID="jtp-qM-UgD">
             <objects>
-                <viewController id="xmh-TT-FEB" sceneMemberID="viewController">
+                <viewController id="xmh-TT-FEB" customClass="CalculatorViewController" customModule="Duality_gg" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zqI-zf-BFp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
