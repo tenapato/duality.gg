@@ -24,6 +24,28 @@
 		63534A182704F4BC00018831 /* LeaderboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63534A172704F4BC00018831 /* LeaderboardController.swift */; };
 		63534A1D2705205B00018831 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63534A1C2705205B00018831 /* ProfileViewController.swift */; };
 		63534A202705216F00018831 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63534A1F2705216F00018831 /* LoginViewController.swift */; };
+		639BBCD427062AD700ADD933 /* Inmortal.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCC127062AD600ADD933 /* Inmortal.png */; };
+		639BBCD527062AD700ADD933 /* Reyna.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCC227062AD600ADD933 /* Reyna.png */; };
+		639BBCD627062AD700ADD933 /* Match_rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCC327062AD600ADD933 /* Match_rectangle.png */; };
+		639BBCD727062AD700ADD933 /* Gold.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCC427062AD600ADD933 /* Gold.png */; };
+		639BBCD827062AD700ADD933 /* Victory_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCC527062AD600ADD933 /* Victory_green.png */; };
+		639BBCD927062AD700ADD933 /* Diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCC627062AD600ADD933 /* Diamond.png */; };
+		639BBCDA27062AD700ADD933 /* Bronce.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCC727062AD600ADD933 /* Bronce.png */; };
+		639BBCDB27062AD700ADD933 /* Iron.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCC827062AD600ADD933 /* Iron.png */; };
+		639BBCDC27062AD700ADD933 /* Radiant.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCC927062AD600ADD933 /* Radiant.png */; };
+		639BBCDD27062AD700ADD933 /* breach.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCCA27062AD600ADD933 /* breach.png */; };
+		639BBCDE27062AD700ADD933 /* Platinum.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCCB27062AD600ADD933 /* Platinum.png */; };
+		639BBCDF27062AD700ADD933 /* Defeat_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCCC27062AD600ADD933 /* Defeat_red.png */; };
+		639BBCE027062AD700ADD933 /* Viper.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCCD27062AD700ADD933 /* Viper.png */; };
+		639BBCE127062AD700ADD933 /* Silver.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCCE27062AD700ADD933 /* Silver.png */; };
+		639BBCE227062AD700ADD933 /* Sova.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCCF27062AD700ADD933 /* Sova.png */; };
+		639BBCE327062AD700ADD933 /* Omen.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCD027062AD700ADD933 /* Omen.png */; };
+		639BBCE427062AD700ADD933 /* Phoenix.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCD127062AD700ADD933 /* Phoenix.png */; };
+		639BBCE527062AD700ADD933 /* Profile_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCD227062AD700ADD933 /* Profile_placeholder.png */; };
+		639BBCE627062AD700ADD933 /* red_rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCD327062AD700ADD933 /* red_rectangle.png */; };
+		639BBCE927062D1800ADD933 /* Map_ascent.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCE827062D1800ADD933 /* Map_ascent.png */; };
+		63D81FF6270671510004A743 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D81FF5270671510004A743 /* Profile.swift */; };
+		63D81FF9270671610004A743 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D81FF8270671610004A743 /* ProfileController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +68,28 @@
 		63534A172704F4BC00018831 /* LeaderboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardController.swift; sourceTree = "<group>"; };
 		63534A1C2705205B00018831 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		63534A1F2705216F00018831 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		639BBCC127062AD600ADD933 /* Inmortal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Inmortal.png; sourceTree = "<group>"; };
+		639BBCC227062AD600ADD933 /* Reyna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reyna.png; sourceTree = "<group>"; };
+		639BBCC327062AD600ADD933 /* Match_rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Match_rectangle.png; sourceTree = "<group>"; };
+		639BBCC427062AD600ADD933 /* Gold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gold.png; sourceTree = "<group>"; };
+		639BBCC527062AD600ADD933 /* Victory_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Victory_green.png; sourceTree = "<group>"; };
+		639BBCC627062AD600ADD933 /* Diamond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Diamond.png; sourceTree = "<group>"; };
+		639BBCC727062AD600ADD933 /* Bronce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bronce.png; sourceTree = "<group>"; };
+		639BBCC827062AD600ADD933 /* Iron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Iron.png; sourceTree = "<group>"; };
+		639BBCC927062AD600ADD933 /* Radiant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Radiant.png; sourceTree = "<group>"; };
+		639BBCCA27062AD600ADD933 /* breach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = breach.png; sourceTree = "<group>"; };
+		639BBCCB27062AD600ADD933 /* Platinum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Platinum.png; sourceTree = "<group>"; };
+		639BBCCC27062AD600ADD933 /* Defeat_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Defeat_red.png; sourceTree = "<group>"; };
+		639BBCCD27062AD700ADD933 /* Viper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Viper.png; sourceTree = "<group>"; };
+		639BBCCE27062AD700ADD933 /* Silver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Silver.png; sourceTree = "<group>"; };
+		639BBCCF27062AD700ADD933 /* Sova.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sova.png; sourceTree = "<group>"; };
+		639BBCD027062AD700ADD933 /* Omen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Omen.png; sourceTree = "<group>"; };
+		639BBCD127062AD700ADD933 /* Phoenix.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Phoenix.png; sourceTree = "<group>"; };
+		639BBCD227062AD700ADD933 /* Profile_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Profile_placeholder.png; sourceTree = "<group>"; };
+		639BBCD327062AD700ADD933 /* red_rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_rectangle.png; sourceTree = "<group>"; };
+		639BBCE827062D1800ADD933 /* Map_ascent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map_ascent.png; sourceTree = "<group>"; };
+		63D81FF5270671510004A743 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		63D81FF8270671610004A743 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +139,7 @@
 		63342817270154FA00D52040 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				639BBCC027062AB800ADD933 /* Profile */,
 				63149E2E270526B100FB77B0 /* profile_bg.png */,
 				63534A042704D92F00018831 /* Leaderboard */,
 				633428192701551800D52040 /* Duality.gg.png */,
@@ -128,8 +173,37 @@
 			children = (
 				63534A142704F4AE00018831 /* Leaderboard.swift */,
 				63534A172704F4BC00018831 /* LeaderboardController.swift */,
+				63D81FF5270671510004A743 /* Profile.swift */,
+				63D81FF8270671610004A743 /* ProfileController.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		639BBCC027062AB800ADD933 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				639BBCE827062D1800ADD933 /* Map_ascent.png */,
+				639BBCCA27062AD600ADD933 /* breach.png */,
+				639BBCC727062AD600ADD933 /* Bronce.png */,
+				639BBCCC27062AD600ADD933 /* Defeat_red.png */,
+				639BBCC627062AD600ADD933 /* Diamond.png */,
+				639BBCC427062AD600ADD933 /* Gold.png */,
+				639BBCC127062AD600ADD933 /* Inmortal.png */,
+				639BBCC827062AD600ADD933 /* Iron.png */,
+				639BBCC327062AD600ADD933 /* Match_rectangle.png */,
+				639BBCD027062AD700ADD933 /* Omen.png */,
+				639BBCD127062AD700ADD933 /* Phoenix.png */,
+				639BBCCB27062AD600ADD933 /* Platinum.png */,
+				639BBCD227062AD700ADD933 /* Profile_placeholder.png */,
+				639BBCC927062AD600ADD933 /* Radiant.png */,
+				639BBCD327062AD700ADD933 /* red_rectangle.png */,
+				639BBCC227062AD600ADD933 /* Reyna.png */,
+				639BBCCE27062AD700ADD933 /* Silver.png */,
+				639BBCCF27062AD700ADD933 /* Sova.png */,
+				639BBCC527062AD600ADD933 /* Victory_green.png */,
+				639BBCCD27062AD700ADD933 /* Viper.png */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,13 +263,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639BBCE927062D1800ADD933 /* Map_ascent.png in Resources */,
+				639BBCE427062AD700ADD933 /* Phoenix.png in Resources */,
+				639BBCE627062AD700ADD933 /* red_rectangle.png in Resources */,
+				639BBCDD27062AD700ADD933 /* breach.png in Resources */,
 				6334280F2701463F00D52040 /* LaunchScreen.storyboard in Resources */,
+				639BBCD527062AD700ADD933 /* Reyna.png in Resources */,
+				639BBCD627062AD700ADD933 /* Match_rectangle.png in Resources */,
+				639BBCDB27062AD700ADD933 /* Iron.png in Resources */,
+				639BBCDC27062AD700ADD933 /* Radiant.png in Resources */,
 				6334281B2701551800D52040 /* Duality.gg.png in Resources */,
+				639BBCD827062AD700ADD933 /* Victory_green.png in Resources */,
+				639BBCE127062AD700ADD933 /* Silver.png in Resources */,
+				639BBCDF27062AD700ADD933 /* Defeat_red.png in Resources */,
 				63149E2F270526B100FB77B0 /* profile_bg.png in Resources */,
 				6334281A2701551800D52040 /* Planets.png in Resources */,
 				6334280C2701463F00D52040 /* Assets.xcassets in Resources */,
+				639BBCDE27062AD700ADD933 /* Platinum.png in Resources */,
+				639BBCD927062AD700ADD933 /* Diamond.png in Resources */,
+				639BBCE227062AD700ADD933 /* Sova.png in Resources */,
+				639BBCDA27062AD700ADD933 /* Bronce.png in Resources */,
 				6334280A2701463E00D52040 /* Main.storyboard in Resources */,
+				639BBCE327062AD700ADD933 /* Omen.png in Resources */,
 				63534A072704D94600018831 /* Leaderboard.png in Resources */,
+				639BBCE027062AD700ADD933 /* Viper.png in Resources */,
+				639BBCD727062AD700ADD933 /* Gold.png in Resources */,
+				639BBCE527062AD700ADD933 /* Profile_placeholder.png in Resources */,
+				639BBCD427062AD700ADD933 /* Inmortal.png in Resources */,
 				63534A082704D94600018831 /* BG.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,11 +302,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				63534A202705216F00018831 /* LoginViewController.swift in Sources */,
+				63D81FF6270671510004A743 /* Profile.swift in Sources */,
 				633428072701463E00D52040 /* ViewController.swift in Sources */,
 				63534A182704F4BC00018831 /* LeaderboardController.swift in Sources */,
 				63534A152704F4AE00018831 /* Leaderboard.swift in Sources */,
 				633428032701463E00D52040 /* AppDelegate.swift in Sources */,
 				63534A102704E81B00018831 /* LeaderboardViewController.swift in Sources */,
+				63D81FF9270671610004A743 /* ProfileController.swift in Sources */,
 				633428052701463E00D52040 /* SceneDelegate.swift in Sources */,
 				63534A1D2705205B00018831 /* ProfileViewController.swift in Sources */,
 				63534A0C2704E32400018831 /* LeaderboardTableViewController.swift in Sources */,
