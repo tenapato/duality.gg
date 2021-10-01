@@ -56,25 +56,25 @@ class ProfileViewController: UIViewController {
             if(self.datos[0].rankedRating <= 300){
                 self.userBadge.image = UIImage(named: "Iron.png");
             }
-            if(self.datos[0].rankedRating => 300 && self.datos[0].rankedRating < 600 ){
+            if(self.datos[0].rankedRating > 300 && self.datos[0].rankedRating < 600 ){
                 self.userBadge.image = UIImage(named: "Bronce.png");
             }
-            if(self.datos[0].rankedRating => 600 && self.datos[0].rankedRating < 900 ){
+            if(self.datos[0].rankedRating > 600 && self.datos[0].rankedRating < 900 ){
                 self.userBadge.image = UIImage(named: "Silver.png");
             }
-            if(self.datos[0].rankedRating => 900 && self.datos[0].rankedRating < 1200 ){
+            if(self.datos[0].rankedRating > 900 && self.datos[0].rankedRating < 1200 ){
                 self.userBadge.image = UIImage(named: "Gold.png");
             }
-            if(self.datos[0].rankedRating => 1200 && self.datos[0].rankedRating < 1500 ){
+            if(self.datos[0].rankedRating > 1200 && self.datos[0].rankedRating < 1500 ){
                 self.userBadge.image = UIImage(named: "Platinum.png");
             }
-            if(self.datos[0].rankedRating => 1500 && self.datos[0].rankedRating < 1800 ){
+            if(self.datos[0].rankedRating > 1500 && self.datos[0].rankedRating < 1800 ){
                 self.userBadge.image = UIImage(named: "Diamond.png");
             }
-            if(self.datos[0].rankedRating => 1800 && self.datos[0].rankedRating < 2100 ){
+            if(self.datos[0].rankedRating > 1800 && self.datos[0].rankedRating < 2100 ){
                 self.userBadge.image = UIImage(named: "Inmortal.png");
             }
-            if(self.datos[0].rankedRating => 2100){
+            if(self.datos[0].rankedRating > 2100){
                 self.userBadge.image = UIImage(named: "Radiant.png");
             }
            
