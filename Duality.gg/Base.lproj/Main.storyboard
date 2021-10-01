@@ -191,7 +191,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#LAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRW-95-fCJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#tag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRW-95-fCJ">
                                 <rect key="frame" x="238" y="180" width="73" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="DgP-MF-NGJ"/>
@@ -224,8 +224,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="RR_placeholder" text="75" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtL-ye-hJ1">
-                                <rect key="frame" x="193" y="269" width="28" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="RR_placeholder" text="RR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtL-ye-hJ1">
+                                <rect key="frame" x="192.5" y="349" width="29.5" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -253,11 +253,10 @@
                             <constraint firstItem="Hsi-AK-CEo" firstAttribute="top" secondItem="wmo-l0-7dw" secondAttribute="bottom" constant="35" id="MpR-Rw-DGU"/>
                             <constraint firstItem="dHR-Uf-UvJ" firstAttribute="centerX" secondItem="ph7-Hz-hkj" secondAttribute="centerX" constant="-120" id="QHZ-ZE-tsl"/>
                             <constraint firstItem="6oV-W4-wmy" firstAttribute="top" secondItem="IRW-95-fCJ" secondAttribute="bottom" constant="8" id="SyB-SR-tCA"/>
-                            <constraint firstItem="OtL-ye-hJ1" firstAttribute="centerX" secondItem="ph7-Hz-hkj" secondAttribute="centerX" id="U5r-PW-JaA"/>
-                            <constraint firstItem="OtL-ye-hJ1" firstAttribute="centerY" secondItem="ph7-Hz-hkj" secondAttribute="centerY" constant="-164.5" id="Ygi-nW-QtJ"/>
                             <constraint firstItem="4dh-ii-pyK" firstAttribute="centerY" secondItem="ph7-Hz-hkj" secondAttribute="centerY" constant="-141.5" id="aTD-wq-QCN"/>
                             <constraint firstItem="6Ew-0V-0Es" firstAttribute="centerX" secondItem="ph7-Hz-hkj" secondAttribute="centerX" constant="-119" id="cVu-Kz-rqp"/>
                             <constraint firstItem="6oV-W4-wmy" firstAttribute="centerX" secondItem="ph7-Hz-hkj" secondAttribute="centerX" id="eQg-pf-jzJ"/>
+                            <constraint firstItem="OtL-ye-hJ1" firstAttribute="centerX" secondItem="ph7-Hz-hkj" secondAttribute="centerX" id="gRr-Ws-Ldy"/>
                             <constraint firstItem="IRW-95-fCJ" firstAttribute="top" secondItem="wmo-l0-7dw" secondAttribute="bottom" constant="8" id="hH1-rX-gt5"/>
                             <constraint firstItem="6oV-W4-wmy" firstAttribute="top" secondItem="wmo-l0-7dw" secondAttribute="bottom" constant="51" id="hs0-hI-SNa"/>
                             <constraint firstItem="4dh-ii-pyK" firstAttribute="centerX" secondItem="ph7-Hz-hkj" secondAttribute="centerX" constant="136.5" id="m6Z-yW-srF"/>
@@ -267,6 +266,7 @@
                             <constraint firstItem="6oV-W4-wmy" firstAttribute="top" secondItem="EIQ-cg-Ake" secondAttribute="bottom" constant="8" id="qMe-Cf-NfO"/>
                             <constraint firstItem="EIQ-cg-Ake" firstAttribute="top" secondItem="wmo-l0-7dw" secondAttribute="bottom" constant="8" id="rk8-Iw-1hD"/>
                             <constraint firstItem="QBK-JW-V02" firstAttribute="centerY" secondItem="ph7-Hz-hkj" secondAttribute="centerY" constant="-108.5" id="tNp-Hc-EXq"/>
+                            <constraint firstItem="OtL-ye-hJ1" firstAttribute="centerY" secondItem="ph7-Hz-hkj" secondAttribute="centerY" constant="-84.5" id="tdB-rc-Z4W"/>
                             <constraint firstItem="IRW-95-fCJ" firstAttribute="centerY" secondItem="ph7-Hz-hkj" secondAttribute="centerY" constant="-250.5" id="uwv-eK-Vgb"/>
                             <constraint firstItem="Hsi-AK-CEo" firstAttribute="centerY" secondItem="ph7-Hz-hkj" secondAttribute="centerY" constant="-122" id="vET-8x-9Md"/>
                             <constraint firstItem="wmo-l0-7dw" firstAttribute="centerY" secondItem="ph7-Hz-hkj" secondAttribute="centerY" constant="-340" id="yJX-Ci-NpD"/>
@@ -275,7 +275,10 @@
                     <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="BOP-mN-2jQ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="rankedRating" destination="OtL-ye-hJ1" id="z1U-gm-mBM"/>
+                        <outlet property="userBadge" destination="6oV-W4-wmy" id="cQN-6x-ncP"/>
                         <outlet property="userName" destination="EIQ-cg-Ake" id="o9l-EO-926"/>
+                        <outlet property="userTag" destination="IRW-95-fCJ" id="V7H-MR-nFb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zOL-K4-sSP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

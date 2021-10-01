@@ -15,6 +15,12 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var userName: UILabel!
     
+    @IBOutlet weak var rankedRating: UILabel!
+    
+    @IBOutlet weak var userTag: UILabel!
+    
+    @IBOutlet weak var userBadge: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,6 +50,34 @@ class ProfileViewController: UIViewController {
             //self.tableView.reloadData()
             //print(self.datos)
             self.userName.text = String(self.datos[0].gameName)
+            self.rankedRating.text = String(self.datos[0].rankedRating)
+            self.userTag.text = String(self.datos[0].tagLine)
+            
+            if(self.datos[0].rankedRating <= 300){
+                self.userBadge.image = UIImage(named: "Iron.png");
+            }
+            if(self.datos[0].rankedRating => 300 && self.datos[0].rankedRating < 600 ){
+                self.userBadge.image = UIImage(named: "Bronce.png");
+            }
+            if(self.datos[0].rankedRating => 600 && self.datos[0].rankedRating < 900 ){
+                self.userBadge.image = UIImage(named: "Silver.png");
+            }
+            if(self.datos[0].rankedRating => 900 && self.datos[0].rankedRating < 1200 ){
+                self.userBadge.image = UIImage(named: "Gold.png");
+            }
+            if(self.datos[0].rankedRating => 1200 && self.datos[0].rankedRating < 1500 ){
+                self.userBadge.image = UIImage(named: "Platinum.png");
+            }
+            if(self.datos[0].rankedRating => 1500 && self.datos[0].rankedRating < 1800 ){
+                self.userBadge.image = UIImage(named: "Diamond.png");
+            }
+            if(self.datos[0].rankedRating => 1800 && self.datos[0].rankedRating < 2100 ){
+                self.userBadge.image = UIImage(named: "Inmortal.png");
+            }
+            if(self.datos[0].rankedRating => 2100){
+                self.userBadge.image = UIImage(named: "Radiant.png");
+            }
+           
         }
         
     }
