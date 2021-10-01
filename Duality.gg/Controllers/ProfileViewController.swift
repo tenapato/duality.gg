@@ -102,7 +102,9 @@ class ProfileViewController: UIViewController {
         //self.present(loginScreen, animated: true)
         if let secondViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController {
 
-                    self.present(secondViewController, animated: true, completion: nil)
+                secondViewController.hidesBottomBarWhenPushed = false
+                self.present(secondViewController, animated: true, completion: nil)
+                    
                 }
         
     }

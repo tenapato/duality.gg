@@ -72,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YYM-N4-ZDT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2768" y="961"/>
+            <point key="canvasLocation" x="2742" y="961"/>
         </scene>
         <!--Leaderbord-->
         <scene sceneID="ggV-RD-sZJ">
@@ -313,7 +313,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="j2X-Xm-uVF" kind="presentation" modalPresentationStyle="fullScreen" id="g2X-rE-BDW"/>
+                                    <segue destination="j2X-Xm-uVF" kind="presentation" modalPresentationStyle="overFullScreen" id="g2X-rE-BDW"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Planets.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Vu-ly-yyB">
@@ -359,7 +359,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="y6p-nb-EXP"/>
+        <segue reference="g2X-rE-BDW"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Duality.gg.png" width="622" height="76"/>
