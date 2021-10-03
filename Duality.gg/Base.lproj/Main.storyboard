@@ -154,6 +154,36 @@
             </objects>
             <point key="canvasLocation" x="2742" y="961"/>
         </scene>
+        <!--Find Player-->
+        <scene sceneID="igi-12-8Ob">
+            <objects>
+                <tableViewController id="1ew-Cb-Gdt" customClass="FindPlayerTableViewController" customModule="Duality_gg" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HfX-qj-IyT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaUsuarios" id="Ly0-Ah-egZ">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ly0-Ah-egZ" id="gRk-Iz-4hf">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1ew-Cb-Gdt" id="cwK-C8-BUm"/>
+                            <outlet property="delegate" destination="1ew-Cb-Gdt" id="Bbp-7L-m9M"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Find Player" image="magnifyingglass" catalog="system" id="5aY-L8-L7S"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8In-y6-NZW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3429" y="961"/>
+        </scene>
         <!--Leaderbord-->
         <scene sceneID="ggV-RD-sZJ">
             <objects>
@@ -428,7 +458,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="k3l-82-kXt" kind="relationship" relationship="viewControllers" id="Czi-rQ-dp0"/>
-                        <segue destination="z0I-Ib-P2M" kind="relationship" relationship="viewControllers" id="C4s-kH-1a7"/>
+                        <segue destination="1ew-Cb-Gdt" kind="relationship" relationship="viewControllers" id="fGd-Ph-AGh"/>
                         <segue destination="xmh-TT-FEB" kind="relationship" relationship="viewControllers" id="PkG-Pl-Kna"/>
                         <segue destination="j2X-Xm-uVF" kind="relationship" relationship="viewControllers" id="y6p-nb-EXP"/>
                     </connections>
@@ -439,7 +469,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="g2X-rE-BDW"/>
+        <segue reference="y6p-nb-EXP"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Duality.gg.png" width="622" height="76"/>
