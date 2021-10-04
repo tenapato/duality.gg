@@ -49,6 +49,9 @@
 		639BBCE927062D1800ADD933 /* Map_ascent.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCE827062D1800ADD933 /* Map_ascent.png */; };
 		63D81FF6270671510004A743 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D81FF5270671510004A743 /* Profile.swift */; };
 		63D81FF9270671610004A743 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D81FF8270671610004A743 /* ProfileController.swift */; };
+		63EE9A14270BBD2900137638 /* MatchHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EE9A13270BBD2900137638 /* MatchHistoryTableViewController.swift */; };
+		63EE9A17270BBD4800137638 /* MatchHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EE9A16270BBD4800137638 /* MatchHistory.swift */; };
+		63EE9A1A270BBD5400137638 /* MatchHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EE9A19270BBD5400137638 /* MatchHistoryController.swift */; };
 		63EFE6552707847F00FAD1F2 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EFE6542707847F00FAD1F2 /* CalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +100,9 @@
 		639BBCE827062D1800ADD933 /* Map_ascent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map_ascent.png; sourceTree = "<group>"; };
 		63D81FF5270671510004A743 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		63D81FF8270671610004A743 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		63EE9A13270BBD2900137638 /* MatchHistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHistoryTableViewController.swift; sourceTree = "<group>"; };
+		63EE9A16270BBD4800137638 /* MatchHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHistory.swift; sourceTree = "<group>"; };
+		63EE9A19270BBD5400137638 /* MatchHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHistoryController.swift; sourceTree = "<group>"; };
 		63EFE6542707847F00FAD1F2 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +180,7 @@
 				63534A1F2705216F00018831 /* LoginViewController.swift */,
 				63EFE6542707847F00FAD1F2 /* CalculatorViewController.swift */,
 				6334A5B7270A664E00B9936A /* FindPlayerTableViewController.swift */,
+				63EE9A13270BBD2900137638 /* MatchHistoryTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -187,6 +194,8 @@
 				63D81FF8270671610004A743 /* ProfileController.swift */,
 				6334A5BA270A67AE00B9936A /* Users.swift */,
 				6334A5BD270A67F200B9936A /* UsersController.swift */,
+				63EE9A16270BBD4800137638 /* MatchHistory.swift */,
+				63EE9A19270BBD5400137638 /* MatchHistoryController.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -315,10 +324,12 @@
 			files = (
 				6334A5B8270A664E00B9936A /* FindPlayerTableViewController.swift in Sources */,
 				63534A202705216F00018831 /* LoginViewController.swift in Sources */,
+				63EE9A1A270BBD5400137638 /* MatchHistoryController.swift in Sources */,
 				63D81FF6270671510004A743 /* Profile.swift in Sources */,
 				633428072701463E00D52040 /* ViewController.swift in Sources */,
 				63534A182704F4BC00018831 /* LeaderboardController.swift in Sources */,
 				63534A152704F4AE00018831 /* Leaderboard.swift in Sources */,
+				63EE9A14270BBD2900137638 /* MatchHistoryTableViewController.swift in Sources */,
 				6334A5BB270A67AE00B9936A /* Users.swift in Sources */,
 				633428032701463E00D52040 /* AppDelegate.swift in Sources */,
 				63534A102704E81B00018831 /* LeaderboardViewController.swift in Sources */,
@@ -327,6 +338,7 @@
 				6334A5BE270A67F200B9936A /* UsersController.swift in Sources */,
 				63534A1D2705205B00018831 /* ProfileViewController.swift in Sources */,
 				63EFE6552707847F00FAD1F2 /* CalculatorViewController.swift in Sources */,
+				63EE9A17270BBD4800137638 /* MatchHistory.swift in Sources */,
 				63534A0C2704E32400018831 /* LeaderboardTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -363,6 +363,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T9U-wb-yjh">
+                                <rect key="frame" x="20" y="441" width="374" height="348"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="M1P-ZY-MUF" kind="embed" id="8Mf-K1-lDH"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KD6-Ip-0K3"/>
                         <color key="backgroundColor" red="0.070588235289999995" green="0.1058823529" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -410,6 +417,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zOL-K4-sSP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2808.6956521739135" y="209.59821428571428"/>
+        </scene>
+        <!--Match History Table View Controller-->
+        <scene sceneID="GuC-GN-rHB">
+            <objects>
+                <tableViewController id="M1P-ZY-MUF" customClass="MatchHistoryTableViewController" customModule="Duality_gg" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gmo-Ut-YnS">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="348"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="matchCell" id="1Vq-VV-I5l">
+                                <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Vq-VV-I5l" id="McK-X4-KPQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="M1P-ZY-MUF" id="2gr-Wz-jk1"/>
+                            <outlet property="delegate" destination="M1P-ZY-MUF" id="Dq3-1E-FeL"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7W-r6-nSJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3595" y="227"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="dOJ-eY-S9C">
