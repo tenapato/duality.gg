@@ -14,6 +14,7 @@ class LeaderboardTableViewController: UITableViewController {
     var datos = [Leaderboard]()
     var lbControlador = LeaderboardController()
         
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,6 +35,7 @@ class LeaderboardTableViewController: UITableViewController {
     func updateGUI(listaLb: Leaderboards){
         DispatchQueue.main.async {
             self.datos = listaLb
+            
             self.tableView.reloadData()
         }
         
@@ -45,8 +47,12 @@ class LeaderboardTableViewController: UITableViewController {
             self.present(alerta, animated: true, completion: nil)
         }
     }
+    /*
+    func update(with leaderboard: Leaderboard){
+        rankLabel.text = String(leaderboard.players[0].rankedRating)
+        gnLabel.text = leaderboard.players[0].gameName
 
-    
+    }*/
 
     // MARK: - Table view data source
 
@@ -67,13 +73,15 @@ class LeaderboardTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "zelda", for: indexPath)
         
-        // Configure the cell...
+                // Configure the cell...
         cell.textLabel?.textColor = UIColor.black
         //cell.backgroundColor = UIColor.clear
         //cell.textLabel?.text = datos[indexPath.row]
         //cell.textLabel?.text = datos[indexPath.row].players[0].gameName
         if indexPath.section == 0 {
-            cell.textLabel?.text = datos[indexPath.section].players[indexPath.row].gameName
+            cell.textLabel?.text = String(datos[indexPath.section].players[indexPath.row].leaderboardRank)
+            cell.detailTextLabel?.text = datos[indexPath.section].players[indexPath.row].gameName
+            
         }
         
         
