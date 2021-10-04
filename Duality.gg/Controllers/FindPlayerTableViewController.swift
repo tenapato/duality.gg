@@ -7,10 +7,24 @@
 
 import UIKit
 
-class FindPlayerTableViewController: UITableViewController {
+class FindPlayerTableViewController: UITableViewController , UISearchResultsUpdating {
     
+    var datosfilt = [AllUser]()
     var datos = [AllUser]()
     var usersControlador = UsersController()
+    let searchController = UISearchController(searchResultsController: nil)
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        if searchController.searchBar.text! == "" {
+            datosfilt = datos
+        } else {
+            datosfilt = datos.filter{
+                let s:String = $0.gameName
+                return(s.lowercased().contains(searchController.searchBar.text!.lowercased()))
+            }
+        }
+        self.tableView.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,12 +41,17 @@ class FindPlayerTableViewController: UITableViewController {
             }
             
         }
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.hidesNavigationBarDuringPresentation = false
+        tableView.tableHeaderView = searchController.searchBar
         
     }
 
     func updateGUI(listaUsers: AllUsers){
         DispatchQueue.main.async {
             self.datos = listaUsers
+            self.datosfilt = listaUsers	
             self.tableView.reloadData()
         }
         
@@ -54,7 +73,7 @@ class FindPlayerTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return datos.count
+        return datosfilt.count
     }
 
     
@@ -62,7 +81,7 @@ class FindPlayerTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "celdaUsuarios", for: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = datos[indexPath.row].gameName
+        cell.textLabel?.text = datosfilt[indexPath.row].gameName
         return cell
     }
     
