@@ -29,15 +29,26 @@ class CalculatorViewController: UIViewController {
         xpbase = ObtenerXP(CT: ctnum!)
         //print(ObtenerXP(CT: ctnum!))
         
-        
-        for n in ctnum!+1...50 {
-            xprestante += ObtenerXP(CT: n)
+        if ctnum! >= 50 {
+            xprestante = 0
         }
+        else{
+            for n in ctnum!+1...50 {
+                xprestante += ObtenerXP(CT: n)
+            }
+        }
+        
         //print(xprestante+cxpnum!)
         TextR.text = String(xprestante+cxpnum!)
         
         gamesrestantes = Double((xprestante+cxpnum!)/4000)
-        TextCR.text = String(Int(gamesrestantes))
+        
+        if (xprestante+cxpnum! > 0) && (gamesrestantes == 0) {
+            TextCR.text = String(1)
+        }
+        else{
+            TextCR.text = String(Int(gamesrestantes+1))
+        }
 
     }
     
@@ -65,3 +76,4 @@ class CalculatorViewController: UIViewController {
     */
 
 }
+

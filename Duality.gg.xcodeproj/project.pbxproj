@@ -19,6 +19,7 @@
 		6334A5B8270A664E00B9936A /* FindPlayerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334A5B7270A664E00B9936A /* FindPlayerTableViewController.swift */; };
 		6334A5BB270A67AE00B9936A /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334A5BA270A67AE00B9936A /* Users.swift */; };
 		6334A5BE270A67F200B9936A /* UsersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334A5BD270A67F200B9936A /* UsersController.swift */; };
+		63495BF7270BD9D6001F00DF /* battlep.png in Resources */ = {isa = PBXBuildFile; fileRef = 63495BF6270BD9D5001F00DF /* battlep.png */; };
 		63534A072704D94600018831 /* Leaderboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 63534A052704D94600018831 /* Leaderboard.png */; };
 		63534A082704D94600018831 /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 63534A062704D94600018831 /* BG.png */; };
 		63534A0C2704E32400018831 /* LeaderboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63534A0B2704E32400018831 /* LeaderboardTableViewController.swift */; };
@@ -71,6 +72,7 @@
 		6334A5B7270A664E00B9936A /* FindPlayerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPlayerTableViewController.swift; sourceTree = "<group>"; };
 		6334A5BA270A67AE00B9936A /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		6334A5BD270A67F200B9936A /* UsersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersController.swift; sourceTree = "<group>"; };
+		63495BF6270BD9D5001F00DF /* battlep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battlep.png; sourceTree = "<group>"; };
 		63534A052704D94600018831 /* Leaderboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leaderboard.png; sourceTree = "<group>"; };
 		63534A062704D94600018831 /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = "<group>"; };
 		63534A0B2704E32400018831 /* LeaderboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 		63342817270154FA00D52040 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				63495BF6270BD9D5001F00DF /* battlep.png */,
 				639BBCC027062AB800ADD933 /* Profile */,
 				63149E2E270526B100FB77B0 /* profile_bg.png */,
 				63534A042704D92F00018831 /* Leaderboard */,
@@ -297,6 +300,7 @@
 				639BBCDB27062AD700ADD933 /* Iron.png in Resources */,
 				639BBCDC27062AD700ADD933 /* Radiant.png in Resources */,
 				6334281B2701551800D52040 /* Duality.gg.png in Resources */,
+				63495BF7270BD9D6001F00DF /* battlep.png in Resources */,
 				639BBCD827062AD700ADD933 /* Victory_green.png in Resources */,
 				639BBCE127062AD700ADD933 /* Silver.png in Resources */,
 				639BBCDF27062AD700ADD933 /* Defeat_red.png in Resources */,
