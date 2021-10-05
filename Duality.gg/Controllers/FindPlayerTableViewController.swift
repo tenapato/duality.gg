@@ -20,6 +20,7 @@ class FindPlayerTableViewController: UITableViewController , UISearchResultsUpda
         } else {
             datosfilt = datos.filter{
                 let s:String = $0.gameName
+                
                 return(s.lowercased().contains(searchController.searchBar.text!.lowercased()))
             }
         }
@@ -41,6 +42,10 @@ class FindPlayerTableViewController: UITableViewController , UISearchResultsUpda
             }
             
         }
+        self.tableView.backgroundColor = UIColor.black
+        searchController.searchBar.barTintColor = UIColor.black
+        searchController.searchBar.searchTextField.backgroundColor = UIColor.black
+        searchController.searchBar.searchTextField.textColor = UIColor.white
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         searchController.hidesNavigationBarDuringPresentation = false
@@ -81,6 +86,8 @@ class FindPlayerTableViewController: UITableViewController , UISearchResultsUpda
         let cell = tableView.dequeueReusableCell(withIdentifier: "celdaUsuarios", for: indexPath)
 
         // Configure the cell...
+        cell.backgroundColor = UIColor.black
+        cell.textLabel?.textColor = UIColor.white
         cell.textLabel?.text = datosfilt[indexPath.row].gameName
         return cell
     }
