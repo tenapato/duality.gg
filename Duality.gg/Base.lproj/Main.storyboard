@@ -116,7 +116,10 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3DS-Xj-WgI">
                                 <rect key="frame" x="20" y="424" width="362" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Fracisco Acuña  CSF A01027294Maximiliano Sapién  CSF A01027541Manuel Herrasti CCM A01657028 Patricio Tena CSF A01027293                                         Maestro Dr. José Martín Molina Espinosa</string>
+                                <string key="text">Fracisco Acuña  CSF A01027294
+Maximiliano Sapién  CSF A01027541
+Manuel Herrasti CCM A01657028 
+Patricio Tena CSF A01027293                                         Maestro Dr. José Martín Molina Espinosa</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
@@ -590,8 +593,8 @@
                     <connections>
                         <segue destination="k3l-82-kXt" kind="relationship" relationship="viewControllers" id="Czi-rQ-dp0"/>
                         <segue destination="1ew-Cb-Gdt" kind="relationship" relationship="viewControllers" id="fGd-Ph-AGh"/>
-                        <segue destination="j2X-Xm-uVF" kind="relationship" relationship="viewControllers" id="y6p-nb-EXP"/>
                         <segue destination="Deu-67-dc1" kind="relationship" relationship="viewControllers" id="RTD-n6-oyw"/>
+                        <segue destination="j2X-Xm-uVF" kind="relationship" relationship="viewControllers" id="y6p-nb-EXP"/>
                         <segue destination="i0F-U2-7Pl" kind="relationship" relationship="viewControllers" id="ohe-wf-mg6"/>
                     </connections>
                 </tabBarController>
@@ -748,7 +751,7 @@
                             <constraint firstItem="Ebf-sd-jvi" firstAttribute="bottom" secondItem="sxP-sZ-X6B" secondAttribute="bottom" id="zL7-ub-l8L"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calculator" id="5CP-SE-FaK"/>
+                    <tabBarItem key="tabBarItem" title="Calculator" image="sum" catalog="system" id="5CP-SE-FaK"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="TextCR" destination="CF3-hj-sqe" id="1UE-ph-dW4"/>
@@ -780,6 +783,7 @@
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="profile_bg.png" width="1125" height="2436"/>
         <image name="red_rectangle.png" width="1122" height="282"/>
+        <image name="sum" catalog="system" width="102" height="128"/>
         <image name="textformat.123" catalog="system" width="128" height="62"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
