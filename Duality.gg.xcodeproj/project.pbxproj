@@ -52,6 +52,7 @@
 		63EE9A14270BBD2900137638 /* MatchHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EE9A13270BBD2900137638 /* MatchHistoryTableViewController.swift */; };
 		63EE9A17270BBD4800137638 /* MatchHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EE9A16270BBD4800137638 /* MatchHistory.swift */; };
 		63EE9A1A270BBD5400137638 /* MatchHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EE9A19270BBD5400137638 /* MatchHistoryController.swift */; };
+		63EE9A1D270BBFBE00137638 /* MatchHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EE9A1C270BBFBE00137638 /* MatchHistoryTableViewCell.swift */; };
 		63EFE6552707847F00FAD1F2 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EFE6542707847F00FAD1F2 /* CalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +104,7 @@
 		63EE9A13270BBD2900137638 /* MatchHistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHistoryTableViewController.swift; sourceTree = "<group>"; };
 		63EE9A16270BBD4800137638 /* MatchHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHistory.swift; sourceTree = "<group>"; };
 		63EE9A19270BBD5400137638 /* MatchHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHistoryController.swift; sourceTree = "<group>"; };
+		63EE9A1C270BBFBE00137638 /* MatchHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		63EFE6542707847F00FAD1F2 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +183,7 @@
 				63EFE6542707847F00FAD1F2 /* CalculatorViewController.swift */,
 				6334A5B7270A664E00B9936A /* FindPlayerTableViewController.swift */,
 				63EE9A13270BBD2900137638 /* MatchHistoryTableViewController.swift */,
+				63EE9A1C270BBFBE00137638 /* MatchHistoryTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				6334A5B8270A664E00B9936A /* FindPlayerTableViewController.swift in Sources */,
 				63534A202705216F00018831 /* LoginViewController.swift in Sources */,
 				63EE9A1A270BBD5400137638 /* MatchHistoryController.swift in Sources */,
+				63EE9A1D270BBFBE00137638 /* MatchHistoryTableViewCell.swift in Sources */,
 				63D81FF6270671510004A743 /* Profile.swift in Sources */,
 				633428072701463E00D52040 /* ViewController.swift in Sources */,
 				63534A182704F4BC00018831 /* LeaderboardController.swift in Sources */,

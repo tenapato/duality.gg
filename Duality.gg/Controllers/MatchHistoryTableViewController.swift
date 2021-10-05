@@ -59,10 +59,15 @@ class MatchHistoryTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "matchCell", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "matchCell", for: indexPath) as! MatchHistoryTableViewCell
+        //tableView.rowHeight = UITableView.automaticDimension
+        //tableView.contentInset = UIEdgeInsets.init(top:15, left:15, bottom:15, right:15)
+        cell.contentView.layoutMargins.left = 20 
+        let match = datos[indexPath.row]
         // Configure the cell...
-        cell.textLabel?.text = datos[indexPath.row].matchID
+        //cell.textLabel?.text = datos[indexPath.row].matchID
+        cell.update(with: match)
+        cell.showsReorderControl = true
         return cell
     }
     
