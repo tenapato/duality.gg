@@ -657,20 +657,6 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
                                             <constraint firstAttribute="bottom" secondItem="xFO-sB-cxd" secondAttribute="bottom" constant="28.5" id="ftQ-sc-nu8"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mQ-hW-9Bw">
-                                        <rect key="frame" x="154" y="526" width="106" height="42"/>
-                                        <color key="backgroundColor" red="1" green="0.27450980390000002" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="42" id="B1g-Ly-xM3"/>
-                                            <constraint firstAttribute="width" constant="106" id="jgB-6K-uF6"/>
-                                        </constraints>
-                                        <state key="normal" title="Calculate">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="Calcular:" destination="Deu-67-dc1" eventType="touchUpInside" id="gLD-lB-OPV"/>
-                                        </connections>
-                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhe-pg-hqo">
                                         <rect key="frame" x="0.0" y="265.5" width="414" height="238"/>
                                         <subviews>
@@ -722,15 +708,29 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
                                             <constraint firstItem="etA-Tk-bqt" firstAttribute="leading" secondItem="fhe-pg-hqo" secondAttribute="leading" constant="59" id="wol-fE-jRj"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mQ-hW-9Bw">
+                                        <rect key="frame" x="154" y="525" width="106" height="42"/>
+                                        <color key="backgroundColor" red="1" green="0.27450980390000002" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="B1g-Ly-xM3"/>
+                                            <constraint firstAttribute="width" constant="106" id="jgB-6K-uF6"/>
+                                        </constraints>
+                                        <state key="normal" title="Calculate">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Calcular:" destination="Deu-67-dc1" eventType="touchUpInside" id="gLD-lB-OPV"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.051689095800000001" green="0.077499561009999995" blue="0.1176520362" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="mFS-5w-vCu" firstAttribute="centerX" secondItem="fhe-pg-hqo" secondAttribute="centerX" id="6cg-kl-FM8"/>
                                     <constraint firstItem="fhe-pg-hqo" firstAttribute="centerY" secondItem="sxP-sZ-X6B" secondAttribute="centerY" id="ISW-KO-fwx"/>
+                                    <constraint firstItem="5mQ-hW-9Bw" firstAttribute="centerY" secondItem="sxP-sZ-X6B" secondAttribute="centerY" constant="161.5" id="TGy-9L-1l5"/>
                                     <constraint firstItem="mFS-5w-vCu" firstAttribute="leading" secondItem="sxP-sZ-X6B" secondAttribute="leading" constant="54" id="Zy3-I3-vpn"/>
-                                    <constraint firstItem="5mQ-hW-9Bw" firstAttribute="centerX" secondItem="sxP-sZ-X6B" secondAttribute="centerX" id="oTA-aI-tc7"/>
+                                    <constraint firstItem="5mQ-hW-9Bw" firstAttribute="centerX" secondItem="sxP-sZ-X6B" secondAttribute="centerX" id="aAG-fq-cks"/>
                                     <constraint firstItem="mFS-5w-vCu" firstAttribute="top" secondItem="sxP-sZ-X6B" secondAttribute="top" constant="90" id="u5U-I9-dqs"/>
-                                    <constraint firstItem="5mQ-hW-9Bw" firstAttribute="centerX" secondItem="sxP-sZ-X6B" secondAttribute="centerX" id="uJM-R9-Bxy"/>
                                     <constraint firstItem="fhe-pg-hqo" firstAttribute="top" secondItem="mFS-5w-vCu" secondAttribute="bottom" constant="2.5" id="vmo-bU-TzU"/>
                                     <constraint firstItem="fhe-pg-hqo" firstAttribute="centerX" secondItem="sxP-sZ-X6B" secondAttribute="centerX" id="x2u-62-ndD"/>
                                 </constraints>
