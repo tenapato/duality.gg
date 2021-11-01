@@ -231,7 +231,7 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
         <!--Profile-->
         <scene sceneID="bHn-3W-1lI">
             <objects>
-                <viewController id="j2X-Xm-uVF" customClass="ProfileViewController" customModule="Duality_gg" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserPage" id="j2X-Xm-uVF" customClass="ProfileViewController" customModule="Duality_gg" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ph7-Hz-hkj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -613,7 +613,6 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="login:" destination="BYK-RG-8tK" eventType="touchUpInside" id="qIx-qm-zUr"/>
-                                    <segue destination="j2X-Xm-uVF" kind="presentation" modalPresentationStyle="fullScreen" id="JID-mo-dYt"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XM2-a6-mfq">
@@ -822,9 +821,6 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
             <point key="canvasLocation" x="1008.6956521739131" y="960.9375"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="JID-mo-dYt"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Duality.gg.png" width="622" height="76"/>
         <image name="Gold.png" width="287" height="306"/>

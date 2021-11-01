@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class UserAuthViewController: UIViewController {
-
+    var uid = ""
     @IBOutlet weak var LoginButton: UIButton!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -38,6 +39,38 @@ class UserAuthViewController: UIViewController {
     
     @IBAction func login(_ sender: Any) {
         
+        // Validate text fields
+        let email = usernameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        // Siging in user
+        Auth.auth().signIn(withEmail: email, password: password){
+            (result, error) in
+            if error != nil{
+                // Couldnt sign in
+                print("Error signin in")
+            } else{
+                // Transintion to user page
+                
+                //print(result!.user.uid)
+                self.transitionToUserPage()
+            }
+        }
+        
+    
+}
+    
+    
+    
+    func transitionToUserPage(){
+        let  profileViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.profileViewController) as? ProfileViewController
+        //profileViewController?.uid = uid
+        profileViewController?.userLoggedIn = false
+        view.window?.rootViewController = profileViewController
+        view.window?.makeKeyAndVisible()
     }
+    
+    
+    
+    
     
 }

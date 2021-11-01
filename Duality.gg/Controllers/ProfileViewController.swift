@@ -6,9 +6,14 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class ProfileViewController: UIViewController {
     var userLoggedIn = true
+    
+    var uid = ""
+    var db = Firestore.firestore()
     
     var datos = [UserElement]()
     var userControlador = ProfileController()
@@ -21,6 +26,8 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var userBadge: UIImageView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,13 +39,17 @@ class ProfileViewController: UIViewController {
             //self.present(loginViewController, animated: true)
             
         }
-        userControlador.fetchUser{ (resultado) in
-            switch resultado{
-            case .success(let listaUser):self.updateGUI(listaUser: listaUser)
-            case .failure(let error):self.displayError(e: error)
+        
+        
+            let user = Auth.auth().currentUser
+            //print(user!.uid)
+            userControlador.fetchUser{ (resultado) in
+                switch resultado{
+                case .success(let listaUser):self.updateGUI(listaUser: listaUser)
+                case .failure(let error):self.displayError(e: error)
+                }
+                
             }
-            
-        }
         
         
         
