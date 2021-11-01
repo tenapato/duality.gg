@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A91FF71287230405ABCA80F /* Pods_Duality_gg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEF880C79BD3388B60ADC1A /* Pods_Duality_gg.framework */; };
 		63146EC3270CC78300262644 /* app_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 63146EC2270CC78300262644 /* app_logo.png */; };
 		63149E2F270526B100FB77B0 /* profile_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 63149E2E270526B100FB77B0 /* profile_bg.png */; };
 		633428032701463E00D52040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633428022701463E00D52040 /* AppDelegate.swift */; };
@@ -29,6 +30,8 @@
 		63534A182704F4BC00018831 /* LeaderboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63534A172704F4BC00018831 /* LeaderboardController.swift */; };
 		63534A1D2705205B00018831 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63534A1C2705205B00018831 /* ProfileViewController.swift */; };
 		63534A202705216F00018831 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63534A1F2705216F00018831 /* LoginViewController.swift */; };
+		6391146E272F693C008EDA71 /* UserAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6391146D272F693C008EDA71 /* UserAuthViewController.swift */; };
+		63911471272F7399008EDA71 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 63911470272F7399008EDA71 /* GoogleService-Info (1).plist */; };
 		639BBCD427062AD700ADD933 /* Inmortal.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCC127062AD600ADD933 /* Inmortal.png */; };
 		639BBCD527062AD700ADD933 /* Reyna.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCC227062AD600ADD933 /* Reyna.png */; };
 		639BBCD627062AD700ADD933 /* Match_rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCC327062AD600ADD933 /* Match_rectangle.png */; };
@@ -83,6 +86,8 @@
 		63534A172704F4BC00018831 /* LeaderboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardController.swift; sourceTree = "<group>"; };
 		63534A1C2705205B00018831 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		63534A1F2705216F00018831 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6391146D272F693C008EDA71 /* UserAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthViewController.swift; sourceTree = "<group>"; };
+		63911470272F7399008EDA71 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 		639BBCC127062AD600ADD933 /* Inmortal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Inmortal.png; sourceTree = "<group>"; };
 		639BBCC227062AD600ADD933 /* Reyna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reyna.png; sourceTree = "<group>"; };
 		639BBCC327062AD600ADD933 /* Match_rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Match_rectangle.png; sourceTree = "<group>"; };
@@ -110,6 +115,9 @@
 		63EE9A19270BBD5400137638 /* MatchHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHistoryController.swift; sourceTree = "<group>"; };
 		63EE9A1C270BBFBE00137638 /* MatchHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		63EFE6542707847F00FAD1F2 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		8FEF880C79BD3388B60ADC1A /* Pods_Duality_gg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Duality_gg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		975074A90C5E026A3D01E906 /* Pods-Duality.gg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duality.gg.debug.xcconfig"; path = "Target Support Files/Pods-Duality.gg/Pods-Duality.gg.debug.xcconfig"; sourceTree = "<group>"; };
+		CE4F76A439CD19D5066A2474 /* Pods-Duality.gg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duality.gg.release.xcconfig"; path = "Target Support Files/Pods-Duality.gg/Pods-Duality.gg.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A91FF71287230405ABCA80F /* Pods_Duality_gg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +137,8 @@
 			children = (
 				633428012701463E00D52040 /* Duality.gg */,
 				633428002701463E00D52040 /* Products */,
+				86F04812AF976BE107AB69BA /* Pods */,
+				9AB4030ECF01CD70DA4393E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +163,7 @@
 				6334280B2701463F00D52040 /* Assets.xcassets */,
 				6334280D2701463F00D52040 /* LaunchScreen.storyboard */,
 				633428102701463F00D52040 /* Info.plist */,
+				63911470272F7399008EDA71 /* GoogleService-Info (1).plist */,
 			);
 			path = Duality.gg;
 			sourceTree = "<group>";
@@ -190,6 +202,7 @@
 				6334A5B7270A664E00B9936A /* FindPlayerTableViewController.swift */,
 				63EE9A13270BBD2900137638 /* MatchHistoryTableViewController.swift */,
 				63EE9A1C270BBFBE00137638 /* MatchHistoryTableViewCell.swift */,
+				6391146D272F693C008EDA71 /* UserAuthViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -236,6 +249,24 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		86F04812AF976BE107AB69BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				975074A90C5E026A3D01E906 /* Pods-Duality.gg.debug.xcconfig */,
+				CE4F76A439CD19D5066A2474 /* Pods-Duality.gg.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9AB4030ECF01CD70DA4393E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FEF880C79BD3388B60ADC1A /* Pods_Duality_gg.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -243,9 +274,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 633428132701463F00D52040 /* Build configuration list for PBXNativeTarget "Duality.gg" */;
 			buildPhases = (
+				46388F914991B2498F741F7A /* [CP] Check Pods Manifest.lock */,
 				633427FB2701463E00D52040 /* Sources */,
 				633427FC2701463E00D52040 /* Frameworks */,
 				633427FD2701463E00D52040 /* Resources */,
+				7AA8550163B59A47CDB8851B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,10 +356,53 @@
 				639BBCE527062AD700ADD933 /* Profile_placeholder.png in Resources */,
 				639BBCD427062AD700ADD933 /* Inmortal.png in Resources */,
 				63534A082704D94600018831 /* BG.png in Resources */,
+				63911471272F7399008EDA71 /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46388F914991B2498F741F7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Duality.gg-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AA8550163B59A47CDB8851B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Duality.gg/Pods-Duality.gg-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Duality.gg/Pods-Duality.gg-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Duality.gg/Pods-Duality.gg-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		633427FB2701463E00D52040 /* Sources */ = {
@@ -352,6 +428,7 @@
 				63EFE6552707847F00FAD1F2 /* CalculatorViewController.swift in Sources */,
 				63EE9A17270BBD4800137638 /* MatchHistory.swift in Sources */,
 				63534A0C2704E32400018831 /* LeaderboardTableViewController.swift in Sources */,
+				6391146E272F693C008EDA71 /* UserAuthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +572,7 @@
 		};
 		633428142701463F00D52040 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 975074A90C5E026A3D01E906 /* Pods-Duality.gg.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -513,6 +591,7 @@
 		};
 		633428152701463F00D52040 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE4F76A439CD19D5066A2474 /* Pods-Duality.gg.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

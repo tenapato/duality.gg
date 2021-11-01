@@ -557,7 +557,7 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="j2X-Xm-uVF" kind="presentation" modalPresentationStyle="overFullScreen" id="g2X-rE-BDW"/>
+                                    <segue destination="BYK-RG-8tK" kind="presentation" modalPresentationStyle="fullScreen" id="t5n-I4-8YL"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Planets.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Vu-ly-yyB">
@@ -579,6 +579,63 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2vy-pP-apK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3765" y="-613"/>
+        </scene>
+        <!--User Auth View Controller-->
+        <scene sceneID="XHj-HQ-tfL">
+            <objects>
+                <viewController id="BYK-RG-8tK" customClass="UserAuthViewController" customModule="Duality_gg" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YxZ-p9-swf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXZ-Lg-7kQ">
+                                <rect key="frame" x="168" y="223" width="79" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cLX-P3-mly">
+                                <rect key="frame" x="119" y="271" width="179" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="26s-jK-YoB">
+                                <rect key="frame" x="119" y="393" width="179" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FId-hB-oJf">
+                                <rect key="frame" x="188" y="487" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="BYK-RG-8tK" eventType="touchUpInside" id="qIx-qm-zUr"/>
+                                    <segue destination="j2X-Xm-uVF" kind="presentation" modalPresentationStyle="fullScreen" id="JID-mo-dYt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XM2-a6-mfq">
+                                <rect key="frame" x="170" y="343" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nG1-Vj-7aT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="LoginButton" destination="FId-hB-oJf" id="dko-TO-lK0"/>
+                        <outlet property="passwordTextField" destination="26s-jK-YoB" id="vck-Fy-96r"/>
+                        <outlet property="usernameTextField" destination="cLX-P3-mly" id="MJ0-tZ-kIk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nWz-bf-M0S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4633.3333333333339" y="-613.39285714285711"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="vRb-hN-eMz">
@@ -766,7 +823,7 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="y6p-nb-EXP"/>
+        <segue reference="JID-mo-dYt"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Duality.gg.png" width="622" height="76"/>
