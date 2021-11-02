@@ -336,6 +336,20 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
                                     <segue destination="M1P-ZY-MUF" kind="embed" id="8Mf-K1-lDH"/>
                                 </connections>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAT-U4-SK6">
+                                <rect key="frame" x="364" y="384" width="30" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="OzU-vX-yT7"/>
+                                    <constraint firstAttribute="width" constant="30" id="QOE-eH-uwb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="1" green="0.27450980390000002" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4pQ-oo-69l" kind="show" id="sTZ-8f-m6X"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KD6-Ip-0K3"/>
                         <color key="backgroundColor" red="0.070588235289999995" green="0.1058823529" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -343,6 +357,7 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
                             <constraint firstItem="IRW-95-fCJ" firstAttribute="centerX" secondItem="ph7-Hz-hkj" secondAttribute="centerX" constant="67.5" id="0j2-Mr-ETk"/>
                             <constraint firstItem="dHR-Uf-UvJ" firstAttribute="centerY" secondItem="ph7-Hz-hkj" secondAttribute="centerY" constant="-141.5" id="2ol-Pr-9Ux"/>
                             <constraint firstItem="QBK-JW-V02" firstAttribute="centerX" secondItem="ph7-Hz-hkj" secondAttribute="centerX" constant="134" id="6B6-eA-53n"/>
+                            <constraint firstItem="vAT-U4-SK6" firstAttribute="centerY" secondItem="ph7-Hz-hkj" secondAttribute="centerY" constant="-35.5" id="HOT-PQ-6bA"/>
                             <constraint firstItem="6oV-W4-wmy" firstAttribute="centerY" secondItem="ph7-Hz-hkj" secondAttribute="centerY" constant="-161" id="HW1-U6-p9b"/>
                             <constraint firstItem="6oV-W4-wmy" firstAttribute="top" secondItem="wmo-l0-7dw" secondAttribute="bottom" constant="51" id="IVv-0o-uHi"/>
                             <constraint firstItem="IRW-95-fCJ" firstAttribute="leading" secondItem="EIQ-cg-Ake" secondAttribute="trailing" constant="8" id="JDL-Qm-r8u"/>
@@ -368,6 +383,7 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
                             <constraint firstItem="OtL-ye-hJ1" firstAttribute="centerY" secondItem="ph7-Hz-hkj" secondAttribute="centerY" constant="-84.5" id="tdB-rc-Z4W"/>
                             <constraint firstItem="IRW-95-fCJ" firstAttribute="centerY" secondItem="ph7-Hz-hkj" secondAttribute="centerY" constant="-250.5" id="uwv-eK-Vgb"/>
                             <constraint firstItem="Hsi-AK-CEo" firstAttribute="centerY" secondItem="ph7-Hz-hkj" secondAttribute="centerY" constant="-122" id="vET-8x-9Md"/>
+                            <constraint firstItem="vAT-U4-SK6" firstAttribute="centerX" secondItem="ph7-Hz-hkj" secondAttribute="centerX" constant="172" id="vcS-sW-ZMe"/>
                             <constraint firstItem="wmo-l0-7dw" firstAttribute="centerY" secondItem="ph7-Hz-hkj" secondAttribute="centerY" constant="-340" id="yJX-Ci-NpD"/>
                         </constraints>
                     </view>
@@ -528,10 +544,152 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
                             <outlet property="delegate" destination="M1P-ZY-MUF" id="Dq3-1E-FeL"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem systemItem="flexibleSpace" id="SPv-1t-9VO"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7W-r6-nSJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3594.202898550725" y="226.33928571428569"/>
+        </scene>
+        <!--Add Match View Controller-->
+        <scene sceneID="q70-RV-qgv">
+            <objects>
+                <viewController id="4pQ-oo-69l" customClass="AddMatchViewController" customModule="Duality_gg" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="auF-rn-4gn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Match ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tyg-17-stt">
+                                <rect key="frame" x="47" y="120" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Map ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ghp-aW-TpJ">
+                                <rect key="frame" x="47" y="186" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bis-wC-auB">
+                                <rect key="frame" x="198" y="257" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is Ranked?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ix-WD-D5U">
+                                <rect key="frame" x="54" y="262" width="83" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Deaths" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WyH-b6-D6E">
+                                <rect key="frame" x="173" y="322" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kills" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jhe-sn-dkb">
+                                <rect key="frame" x="47" y="322" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Assists" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nEx-Kg-ugw">
+                                <rect key="frame" x="40" y="404" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Score" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I9m-pD-2gw">
+                                <rect key="frame" x="185" y="404" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rounds Played" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tQv-rq-LJI">
+                                <rect key="frame" x="29" y="476" width="147" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rounds Won" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FX8-5y-Yft">
+                                <rect key="frame" x="191" y="476" width="147" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Won?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgu-z1-wxH">
+                                <rect key="frame" x="47" y="544" width="43" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="i5d-sq-jGF">
+                                <rect key="frame" x="159" y="544" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYY-tE-R6b">
+                                <rect key="frame" x="47" y="623" width="46" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="g1S-Pu-ynY">
+                                <rect key="frame" x="151" y="618" width="113" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Green"/>
+                                    <segment title="Red"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Agent:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIX-bq-7hz">
+                                <rect key="frame" x="45" y="685" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Agent" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="70d-iI-bon">
+                                <rect key="frame" x="134" y="678" width="147" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HL8-z9-Ir4">
+                                <rect key="frame" x="158" y="741" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitTouched:" destination="4pQ-oo-69l" eventType="touchUpInside" id="9PD-eh-LYF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mNp-uP-BNO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jlU-Bq-Iei"/>
+                    <connections>
+                        <outlet property="MapIDTextField" destination="Ghp-aW-TpJ" id="D5y-AB-sda"/>
+                        <outlet property="agentTextField" destination="70d-iI-bon" id="flg-AO-w0f"/>
+                        <outlet property="assistsTextField" destination="nEx-Kg-ugw" id="kzO-ie-iDS"/>
+                        <outlet property="deathsTextField" destination="WyH-b6-D6E" id="B9T-Yl-XX8"/>
+                        <outlet property="isRankedSwitch" destination="Bis-wC-auB" id="HYG-nN-RI8"/>
+                        <outlet property="killsTextField" destination="jhe-sn-dkb" id="AME-Vc-yPD"/>
+                        <outlet property="matchIDTextField" destination="tyg-17-stt" id="o09-gP-FNY"/>
+                        <outlet property="roundsPlayerTextField" destination="tQv-rq-LJI" id="J4Q-tm-gl3"/>
+                        <outlet property="roundsWonTextField" destination="FX8-5y-Yft" id="cEn-TT-Jkh"/>
+                        <outlet property="scoreTextField" destination="I9m-pD-2gw" id="2bX-eh-Rqi"/>
+                        <outlet property="teamSegControl" destination="g1S-Pu-ynY" id="ZrM-nz-iD2"/>
+                        <outlet property="wonSwitch" destination="i5d-sq-jGF" id="Vwm-EW-L5K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m2E-ry-mXa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4413.04347826087" y="170.75892857142856"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="dOJ-eY-S9C">
