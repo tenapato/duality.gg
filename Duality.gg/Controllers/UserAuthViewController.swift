@@ -13,6 +13,7 @@ class UserAuthViewController: UIViewController {
     @IBOutlet weak var LoginButton: UIButton!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var errorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -48,6 +49,8 @@ class UserAuthViewController: UIViewController {
             if error != nil{
                 // Couldnt sign in
                 print("Error signin in")
+                self.errorLabel.isHidden = false
+                self.errorLabel.text! = "Error siging in"
             } else{
                 // Transintion to user page
                 

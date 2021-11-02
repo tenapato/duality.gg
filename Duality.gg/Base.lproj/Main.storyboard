@@ -143,7 +143,7 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="McY-ck-jxh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="898.55072463768124" y="-567.1875"/>
+            <point key="canvasLocation" x="1246" y="-945"/>
         </scene>
         <!--Leaderbord-->
         <scene sceneID="ggV-RD-sZJ">
@@ -653,6 +653,16 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehS-Ah-ipe">
+                                <rect key="frame" x="88.5" y="445" width="237" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="237" id="bvv-H2-Gns"/>
+                                    <constraint firstAttribute="height" constant="21" id="h2F-sb-PHp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nG1-Vj-7aT"/>
                         <color key="backgroundColor" red="0.08235294118" green="0.10980392160000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -662,7 +672,10 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
                             <constraint firstItem="cLX-P3-mly" firstAttribute="top" secondItem="gXZ-Lg-7kQ" secondAttribute="bottom" constant="8" id="7M5-rM-rjv"/>
                             <constraint firstItem="XM2-a6-mfq" firstAttribute="centerX" secondItem="YxZ-p9-swf" secondAttribute="centerX" constant="-51" id="9Dx-Wx-dzS"/>
                             <constraint firstItem="gXZ-Lg-7kQ" firstAttribute="centerY" secondItem="YxZ-p9-swf" secondAttribute="centerY" constant="-195.5" id="BbY-Kd-oMg"/>
+                            <constraint firstItem="ehS-Ah-ipe" firstAttribute="centerX" secondItem="YxZ-p9-swf" secondAttribute="centerX" id="D6n-jr-aFY"/>
                             <constraint firstItem="26s-jK-YoB" firstAttribute="top" secondItem="XM2-a6-mfq" secondAttribute="bottom" constant="8" id="DHj-5q-XgP"/>
+                            <constraint firstItem="ehS-Ah-ipe" firstAttribute="centerY" secondItem="YxZ-p9-swf" secondAttribute="centerY" constant="7.5" id="FjB-pv-uv0"/>
+                            <constraint firstItem="ehS-Ah-ipe" firstAttribute="centerX" secondItem="YxZ-p9-swf" secondAttribute="centerX" id="H1a-xw-Pgm"/>
                             <constraint firstItem="cLX-P3-mly" firstAttribute="centerX" secondItem="YxZ-p9-swf" secondAttribute="centerX" id="HQW-3F-Ep7"/>
                             <constraint firstItem="cLX-P3-mly" firstAttribute="centerY" secondItem="YxZ-p9-swf" secondAttribute="centerY" constant="-160" id="T8p-9U-hzq"/>
                             <constraint firstItem="26s-jK-YoB" firstAttribute="centerX" secondItem="YxZ-p9-swf" secondAttribute="centerX" id="XxS-X3-A3f"/>
@@ -670,6 +683,7 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
                             <constraint firstItem="FId-hB-oJf" firstAttribute="top" secondItem="26s-jK-YoB" secondAttribute="bottom" constant="60" id="fa9-w7-GnJ"/>
                             <constraint firstItem="FId-hB-oJf" firstAttribute="top" secondItem="26s-jK-YoB" secondAttribute="bottom" constant="60" id="fcV-2T-mlL"/>
                             <constraint firstItem="FId-hB-oJf" firstAttribute="centerX" secondItem="YxZ-p9-swf" secondAttribute="centerX" id="gcu-KP-dKH"/>
+                            <constraint firstItem="ehS-Ah-ipe" firstAttribute="centerY" secondItem="YxZ-p9-swf" secondAttribute="centerY" constant="7.5" id="jLd-pP-z2g"/>
                             <constraint firstItem="26s-jK-YoB" firstAttribute="centerY" secondItem="YxZ-p9-swf" secondAttribute="centerY" constant="-38" id="mM4-8m-NZY"/>
                             <constraint firstItem="XM2-a6-mfq" firstAttribute="centerY" secondItem="YxZ-p9-swf" secondAttribute="centerY" constant="-73.5" id="qho-Dk-40H"/>
                             <constraint firstItem="fjW-bh-bX2" firstAttribute="centerX" secondItem="YxZ-p9-swf" secondAttribute="centerX" id="wN1-yI-MRe"/>
@@ -679,6 +693,7 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
                     </view>
                     <connections>
                         <outlet property="LoginButton" destination="FId-hB-oJf" id="dko-TO-lK0"/>
+                        <outlet property="errorLabel" destination="ehS-Ah-ipe" id="4dH-IA-Dek"/>
                         <outlet property="passwordTextField" destination="26s-jK-YoB" id="vck-Fy-96r"/>
                         <outlet property="usernameTextField" destination="cLX-P3-mly" id="MJ0-tZ-kIk"/>
                     </connections>
@@ -894,6 +909,9 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
