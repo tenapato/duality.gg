@@ -97,8 +97,18 @@ class AddMatchViewController: UIViewController {
                        print("Error adding document: \(err)")
                    } else {
                        print("Document added with ID: \(ref!.documentID)")
+                        self.transitionToUserPage()
                    }
                }
         
     }
+    
+    func transitionToUserPage(){
+        let  profileViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.profileViewController) as? ProfileViewController
+        //profileViewController?.uid = uid
+        profileViewController?.userLoggedIn = false
+        view.window?.rootViewController = profileViewController
+        view.window?.makeKeyAndVisible()
+    }
+    
 }
