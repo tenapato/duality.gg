@@ -42,7 +42,7 @@
 		639BBCDA27062AD700ADD933 /* Bronce.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCC727062AD600ADD933 /* Bronce.png */; };
 		639BBCDB27062AD700ADD933 /* Iron.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCC827062AD600ADD933 /* Iron.png */; };
 		639BBCDC27062AD700ADD933 /* Radiant.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCC927062AD600ADD933 /* Radiant.png */; };
-		639BBCDD27062AD700ADD933 /* breach.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCCA27062AD600ADD933 /* breach.png */; };
+		639BBCDD27062AD700ADD933 /* Breach.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCCA27062AD600ADD933 /* Breach.png */; };
 		639BBCDE27062AD700ADD933 /* Platinum.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCCB27062AD600ADD933 /* Platinum.png */; };
 		639BBCDF27062AD700ADD933 /* Defeat_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCCC27062AD600ADD933 /* Defeat_red.png */; };
 		639BBCE027062AD700ADD933 /* Viper.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BBCCD27062AD700ADD933 /* Viper.png */; };
@@ -99,7 +99,7 @@
 		639BBCC727062AD600ADD933 /* Bronce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bronce.png; sourceTree = "<group>"; };
 		639BBCC827062AD600ADD933 /* Iron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Iron.png; sourceTree = "<group>"; };
 		639BBCC927062AD600ADD933 /* Radiant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Radiant.png; sourceTree = "<group>"; };
-		639BBCCA27062AD600ADD933 /* breach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = breach.png; sourceTree = "<group>"; };
+		639BBCCA27062AD600ADD933 /* Breach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Breach.png; sourceTree = "<group>"; };
 		639BBCCB27062AD600ADD933 /* Platinum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Platinum.png; sourceTree = "<group>"; };
 		639BBCCC27062AD600ADD933 /* Defeat_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Defeat_red.png; sourceTree = "<group>"; };
 		639BBCCD27062AD700ADD933 /* Viper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Viper.png; sourceTree = "<group>"; };
@@ -185,6 +185,19 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		634CF71B2730E37000240AAD /* Chars */ = {
+			isa = PBXGroup;
+			children = (
+				639BBCD027062AD700ADD933 /* Omen.png */,
+				639BBCD127062AD700ADD933 /* Phoenix.png */,
+				639BBCC227062AD600ADD933 /* Reyna.png */,
+				639BBCCF27062AD700ADD933 /* Sova.png */,
+				639BBCCD27062AD700ADD933 /* Viper.png */,
+				639BBCCA27062AD600ADD933 /* Breach.png */,
+			);
+			path = Chars;
+			sourceTree = "<group>";
+		};
 		63534A042704D92F00018831 /* Leaderboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,8 +249,8 @@
 		639BBCC027062AB800ADD933 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				634CF71B2730E37000240AAD /* Chars */,
 				639BBCE827062D1800ADD933 /* Map_ascent.png */,
-				639BBCCA27062AD600ADD933 /* breach.png */,
 				639BBCC727062AD600ADD933 /* Bronce.png */,
 				639BBCCC27062AD600ADD933 /* Defeat_red.png */,
 				639BBCC627062AD600ADD933 /* Diamond.png */,
@@ -245,17 +258,12 @@
 				639BBCC127062AD600ADD933 /* Inmortal.png */,
 				639BBCC827062AD600ADD933 /* Iron.png */,
 				639BBCC327062AD600ADD933 /* Match_rectangle.png */,
-				639BBCD027062AD700ADD933 /* Omen.png */,
-				639BBCD127062AD700ADD933 /* Phoenix.png */,
 				639BBCCB27062AD600ADD933 /* Platinum.png */,
 				639BBCD227062AD700ADD933 /* Profile_placeholder.png */,
 				639BBCC927062AD600ADD933 /* Radiant.png */,
 				639BBCD327062AD700ADD933 /* red_rectangle.png */,
-				639BBCC227062AD600ADD933 /* Reyna.png */,
 				639BBCCE27062AD700ADD933 /* Silver.png */,
-				639BBCCF27062AD700ADD933 /* Sova.png */,
 				639BBCC527062AD600ADD933 /* Victory_green.png */,
-				639BBCCD27062AD700ADD933 /* Viper.png */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -340,7 +348,7 @@
 				639BBCE427062AD700ADD933 /* Phoenix.png in Resources */,
 				63146EC3270CC78300262644 /* app_logo.png in Resources */,
 				639BBCE627062AD700ADD933 /* red_rectangle.png in Resources */,
-				639BBCDD27062AD700ADD933 /* breach.png in Resources */,
+				639BBCDD27062AD700ADD933 /* Breach.png in Resources */,
 				6334280F2701463F00D52040 /* LaunchScreen.storyboard in Resources */,
 				639BBCD527062AD700ADD933 /* Reyna.png in Resources */,
 				639BBCD627062AD700ADD933 /* Match_rectangle.png in Resources */,

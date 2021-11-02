@@ -17,6 +17,7 @@ class MatchHistoryTableViewCell: UITableViewCell {
     @IBOutlet weak var roundsWinLabel: UILabel!
     @IBOutlet weak var roundsLostLabel: UILabel!
     @IBOutlet weak var imageLabel: UIImageView!
+    @IBOutlet weak var charImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -46,7 +47,9 @@ class MatchHistoryTableViewCell: UITableViewCell {
         }
         roundsWinLabel.text = String(match.roundsWon)
         roundsLostLabel.text = String(match.roundsPlayed - match.roundsWon)
-    
+        
+       // Set char image
+        charImage.image = UIImage(named: match.CharId + ".png");
     }
     override func layoutSubviews() {
         super.layoutSubviews()

@@ -512,6 +512,7 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="30" right="30"/>
                                 <connections>
                                     <outlet property="assistsLabel" destination="V1S-ed-IXa" id="mWe-Qu-Hp0"/>
+                                    <outlet property="charImage" destination="0s4-65-1ss" id="MCJ-xH-KaX"/>
                                     <outlet property="deathsLabel" destination="QAR-Uj-SxU" id="NAW-Xh-4cv"/>
                                     <outlet property="imageLabel" destination="d1E-hl-Evv" id="sov-5k-VDg"/>
                                     <outlet property="killsLabel" destination="ILF-Mi-J5x" id="8p7-7d-2eJ"/>
