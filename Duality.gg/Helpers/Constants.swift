@@ -13,6 +13,7 @@ struct Constants{
     struct Storyboard{
         
         static let profileViewController = "UserPage"
+        static let tabBarViewController = "tabBarView"
         
     }
     

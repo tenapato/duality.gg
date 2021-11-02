@@ -65,10 +65,10 @@ class UserAuthViewController: UIViewController {
     
     
     func transitionToUserPage(){
-        let  profileViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.profileViewController) as? ProfileViewController
+        let  tabBarViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.tabBarViewController) as? TabBarViewController
         //profileViewController?.uid = uid
-        profileViewController?.userLoggedIn = false
-        view.window?.rootViewController = profileViewController
+        //tabBarViewController?.userLoggedIn = false
+        view.window?.rootViewController = tabBarViewController
         view.window?.makeKeyAndVisible()
     }
     

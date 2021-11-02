@@ -32,7 +32,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        userLoggedIn = true
+        userLoggedIn = false
         if userLoggedIn{
             notLoggedIn()
             //let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
