@@ -42,9 +42,9 @@ class ProfileController{
     
     func fetchUser(completion: @escaping (Result<User,Error>)->Void){
         let user = Auth.auth().currentUser
-        print(user!.uid)
-        
-        let docRef = db.collection("users").document(user!.uid)
+        //print(user!.uid)
+        var userId = user?.uid ?? ""
+        let docRef = db.collection("users").document(userId)
         var lista_user = [UserElement]()
         
     

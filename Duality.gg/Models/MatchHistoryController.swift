@@ -35,14 +35,14 @@ class MatchHistoryController{
     }*/
     func fetchMatches(completion: @escaping (Result<Matches,Error>)->Void){
         let user = Auth.auth().currentUser
-        print(user!.uid)
-        
+        //print(user!.uid)
+        var userId = user?.uid ?? ""
         //let docRef = db.collection("matches").document(user!.uid)
         var lista_matches = [Match]()
         
     
         
-        db.collection("matches").whereField("uid", isEqualTo: user!.uid).getDocuments() { (querySnapshot, err) in
+        db.collection("matches").whereField("uid", isEqualTo: userId).getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: (err)")
             } else {
