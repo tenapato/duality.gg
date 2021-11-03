@@ -14,6 +14,7 @@ struct Constants{
         
         static let profileViewController = "UserPage"
         static let tabBarViewController = "tabBarView"
+        static let loginViewController = "LoginViewController"
         
     }
     

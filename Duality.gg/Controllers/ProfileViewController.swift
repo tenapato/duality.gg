@@ -120,6 +120,27 @@ class ProfileViewController: UIViewController {
         
     }
     
+    
+    
+    @IBAction func logOutTapped(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        do {
+          try firebaseAuth.signOut()
+            self.transitionToUserPage()
+        } catch let signOutError as NSError {
+          print("Error signing out: %@", signOutError)
+        }
+        
+    }
+    
+    func transitionToUserPage(){
+        let  loginViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.loginViewController) as? LoginViewController
+        //profileViewController?.uid = uid
+        //tabBarViewController?.userLoggedIn = false
+        view.window?.rootViewController = loginViewController
+        view.window?.makeKeyAndVisible()
+    }
+    
     /*
     // MARK: - Navigation
 

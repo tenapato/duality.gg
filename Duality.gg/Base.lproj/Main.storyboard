@@ -317,6 +317,20 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
                                     <segue destination="4pQ-oo-69l" kind="show" id="sTZ-8f-m6X"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtK-uM-JnY">
+                                <rect key="frame" x="20" y="44" width="61" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.27450980390000002" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="DJ5-ER-nJn"/>
+                                    <constraint firstAttribute="height" constant="30" id="kdR-6U-n20"/>
+                                </constraints>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOutTapped:" destination="j2X-Xm-uVF" eventType="touchUpInside" id="mqZ-Ec-HTd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KD6-Ip-0K3"/>
                         <color key="backgroundColor" red="0.070588235289999995" green="0.1058823529" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -332,6 +346,7 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
                             <constraint firstItem="wmo-l0-7dw" firstAttribute="centerX" secondItem="ph7-Hz-hkj" secondAttribute="centerX" id="LZJ-Vr-uwq"/>
                             <constraint firstItem="Hsi-AK-CEo" firstAttribute="centerX" secondItem="ph7-Hz-hkj" secondAttribute="centerX" id="M4V-re-kZS"/>
                             <constraint firstItem="Hsi-AK-CEo" firstAttribute="top" secondItem="wmo-l0-7dw" secondAttribute="bottom" constant="35" id="MpR-Rw-DGU"/>
+                            <constraint firstItem="GtK-uM-JnY" firstAttribute="centerX" secondItem="ph7-Hz-hkj" secondAttribute="centerX" constant="-156.5" id="Ojg-2c-HHZ"/>
                             <constraint firstItem="dHR-Uf-UvJ" firstAttribute="centerX" secondItem="ph7-Hz-hkj" secondAttribute="centerX" constant="-120" id="QHZ-ZE-tsl"/>
                             <constraint firstItem="6oV-W4-wmy" firstAttribute="top" secondItem="IRW-95-fCJ" secondAttribute="bottom" constant="8" id="SyB-SR-tCA"/>
                             <constraint firstItem="4dh-ii-pyK" firstAttribute="centerY" secondItem="ph7-Hz-hkj" secondAttribute="centerY" constant="-141.5" id="aTD-wq-QCN"/>
@@ -340,6 +355,7 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
                             <constraint firstItem="OtL-ye-hJ1" firstAttribute="centerX" secondItem="ph7-Hz-hkj" secondAttribute="centerX" id="gRr-Ws-Ldy"/>
                             <constraint firstItem="IRW-95-fCJ" firstAttribute="top" secondItem="wmo-l0-7dw" secondAttribute="bottom" constant="8" id="hH1-rX-gt5"/>
                             <constraint firstItem="6oV-W4-wmy" firstAttribute="top" secondItem="wmo-l0-7dw" secondAttribute="bottom" constant="51" id="hs0-hI-SNa"/>
+                            <constraint firstItem="GtK-uM-JnY" firstAttribute="centerY" secondItem="ph7-Hz-hkj" secondAttribute="centerY" constant="-389" id="lI1-zz-1Eb"/>
                             <constraint firstItem="4dh-ii-pyK" firstAttribute="centerX" secondItem="ph7-Hz-hkj" secondAttribute="centerX" constant="136.5" id="m6Z-yW-srF"/>
                             <constraint firstItem="fzX-JS-gwX" firstAttribute="centerX" secondItem="ph7-Hz-hkj" secondAttribute="centerX" id="mYj-W4-5Hh"/>
                             <constraint firstItem="6Ew-0V-0Es" firstAttribute="centerY" secondItem="ph7-Hz-hkj" secondAttribute="centerY" constant="-108.5" id="mqD-hL-iq7"/>
@@ -365,7 +381,7 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zOL-K4-sSP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2587" y="190"/>
+            <point key="canvasLocation" x="2586.9565217391305" y="189.50892857142856"/>
         </scene>
         <!--Match History Table View Controller-->
         <scene sceneID="GuC-GN-rHB">
