@@ -1,0 +1,6 @@
+framework module Pods_Duality_gg {
+  umbrella header "Pods-Duality.gg-umbrella.h"
+
+  export *
+  module * { export * }
+}

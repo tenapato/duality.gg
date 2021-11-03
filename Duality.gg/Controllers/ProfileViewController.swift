@@ -6,9 +6,14 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class ProfileViewController: UIViewController {
     var userLoggedIn = true
+    
+    var uid = ""
+    var db = Firestore.firestore()
     
     var datos = [UserElement]()
     var userControlador = ProfileController()
@@ -21,24 +26,30 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var userBadge: UIImageView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        userLoggedIn = true
+        userLoggedIn = false
         if userLoggedIn{
             notLoggedIn()
             //let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
             //self.present(loginViewController, animated: true)
             
         }
-        userControlador.fetchUser{ (resultado) in
-            switch resultado{
-            case .success(let listaUser):self.updateGUI(listaUser: listaUser)
-            case .failure(let error):self.displayError(e: error)
+        
+        
+            let user = Auth.auth().currentUser
+            //print(user!.uid)
+            userControlador.fetchUser{ (resultado) in
+                switch resultado{
+                case .success(let listaUser):self.updateGUI(listaUser: listaUser)
+                case .failure(let error):self.displayError(e: error)
+                }
+                
             }
-            
-        }
         
         
         
@@ -107,6 +118,27 @@ class ProfileViewController: UIViewController {
                     
                 }
         
+    }
+    
+    
+    
+    @IBAction func logOutTapped(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        do {
+          try firebaseAuth.signOut()
+            self.transitionToUserPage()
+        } catch let signOutError as NSError {
+          print("Error signing out: %@", signOutError)
+        }
+        
+    }
+    
+    func transitionToUserPage(){
+        let  loginViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.loginViewController) as? LoginViewController
+        //profileViewController?.uid = uid
+        //tabBarViewController?.userLoggedIn = false
+        view.window?.rootViewController = loginViewController
+        view.window?.makeKeyAndVisible()
     }
     
     /*

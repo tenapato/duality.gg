@@ -6,9 +6,11 @@
 //
 
 import Foundation
-
+import Firebase
 class MatchHistoryController{
-    func fetchMatches(completion: @escaping (Result<Matches,Error>)->Void){
+    let db = Firestore.firestore()
+    
+    /*func fetchMatches(completion: @escaping (Result<Matches,Error>)->Void){
         var urlComponents = URLComponents(string: "http://martinmolina.com.mx/202113/tc2024/equipo6/matches.json")!
 
         let task = URLSession.shared.dataTask(with: urlComponents.url!) { (data, response, error) in
@@ -29,6 +31,32 @@ class MatchHistoryController{
         }
 
         task.resume()
+    
+    }*/
+    func fetchMatches(completion: @escaping (Result<Matches,Error>)->Void){
+        let user = Auth.auth().currentUser
+        //print(user!.uid)
+        var userId = user?.uid ?? ""
+        //let docRef = db.collection("matches").document(user!.uid)
+        var lista_matches = [Match]()
+        
+    
+        
+        db.collection("matches").whereField("uid", isEqualTo: userId).getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: (err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("(document.documentID) => (document.data())")
+                    var r = Match(d:document)
+                    lista_matches.append(r)
+                }
+                completion(.success(lista_matches))
+            }
+        }
+        
+        
+        
     
     }
     

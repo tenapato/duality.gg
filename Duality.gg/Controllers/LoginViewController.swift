@@ -26,9 +26,9 @@ class LoginViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         
-        let siguiente = segue.destination as! ProfileViewController
+        //let siguiente = segue.destination as! ProfileViewController
         // Add Riot Authentication Method
-        siguiente.userLoggedIn = true
+        //siguiente.userLoggedIn = true
         
     }
     
