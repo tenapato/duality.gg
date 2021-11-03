@@ -6,8 +6,11 @@
 //
 
 import Foundation
+import Firebase
 
 class UsersController{
+    let db = Firestore.firestore()
+    /*
     func fetchUsers(completion: @escaping (Result<AllUsers,Error>)->Void){
         var urlComponents = URLComponents(string: "http://martinmolina.com.mx/202113/tc2024/equipo6/users.json")!
 
@@ -31,6 +34,24 @@ class UsersController{
         task.resume()
     
     }
+    */
     
+    func fetchUsers(completion: @escaping (Result<AllUsers,Error>)->Void){
+        var lista_users = [AllUser]()
+        db.collection("users").getDocuments() {QuerySnapshot, err in
+            if let err = err {
+                print("error no docs: \(err)")
+                completion(.failure(err))
+            } else{
+                
+                for document in QuerySnapshot!.documents{
+                    var u = AllUser(d: document)
+                    lista_users.append(u)
+                }
+                completion(.success(lista_users))
+            }
+        }
+        
+    }
     
 }
