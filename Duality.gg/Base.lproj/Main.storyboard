@@ -71,14 +71,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="gameName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ccb-8v-9Nm">
-                                <rect key="frame" x="34" y="210" width="165" height="21"/>
+                                <rect key="frame" x="20" y="210" width="165" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RRLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXJ-h0-DGf">
-                                <rect key="frame" x="176" y="322" width="63" height="21"/>
+                                <rect key="frame" x="176" y="382" width="63" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -91,6 +91,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKO-8R-H6X">
+                                <rect key="frame" x="87" y="239" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EfN-wz-5IA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -98,6 +102,7 @@
                     <navigationItem key="navigationItem" id="TXc-XQ-Ble"/>
                     <connections>
                         <outlet property="gameNameLabel" destination="Ccb-8v-9Nm" id="VtB-ZK-jRN"/>
+                        <outlet property="imagePlaceHolder" destination="aKO-8R-H6X" id="Dfl-So-y39"/>
                         <outlet property="rankedRatingLabel" destination="VXJ-h0-DGf" id="2sR-wR-Mhe"/>
                         <outlet property="tagLineLabel" destination="rW8-C9-Mhc" id="x1C-uI-PFD"/>
                     </connections>
