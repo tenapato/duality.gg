@@ -55,16 +55,12 @@ class AddMatchViewController: UIViewController {
         
         var won = false
         if wonSwitch.isOn{
-            let won = true
-        } else{
-            let won = false
-        }
+             won = true
+        } 
         var isRanked = false
         
         if isRankedSwitch.isOn{
-            let isRanked = true
-        } else {
-            let isRanked = false
+             isRanked = true
         }
         var team = ""
         if teamSegControl.selectedSegmentIndex == 0 {
