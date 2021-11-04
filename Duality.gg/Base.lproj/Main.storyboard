@@ -44,6 +44,9 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="iZI-FM-5Da" kind="show" id="edY-3f-Ogp"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -52,11 +55,74 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Find Player" image="magnifyingglass" catalog="system" id="5aY-L8-L7S"/>
+                    <navigationItem key="navigationItem" title="Find Player" id="rre-Kf-M0o"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8In-y6-NZW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3429" y="961"/>
+            <point key="canvasLocation" x="4583" y="961"/>
+        </scene>
+        <!--User Detail View Controller-->
+        <scene sceneID="Rkn-Jo-sfQ">
+            <objects>
+                <viewController storyboardIdentifier="UserDetailViewController" id="iZI-FM-5Da" customClass="UserDetailViewController" customModule="Duality_gg" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ngQ-Dr-1gR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="gameName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ccb-8v-9Nm">
+                                <rect key="frame" x="34" y="210" width="165" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RRLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXJ-h0-DGf">
+                                <rect key="frame" x="176" y="322" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tagLine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rW8-C9-Mhc">
+                                <rect key="frame" x="259" y="210" width="57" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EfN-wz-5IA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TXc-XQ-Ble"/>
+                    <connections>
+                        <outlet property="gameNameLabel" destination="Ccb-8v-9Nm" id="VtB-ZK-jRN"/>
+                        <outlet property="rankedRatingLabel" destination="VXJ-h0-DGf" id="2sR-wR-Mhe"/>
+                        <outlet property="tagLineLabel" destination="rW8-C9-Mhc" id="x1C-uI-PFD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pgI-fr-XdZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5398.5507246376819" y="960.9375"/>
+        </scene>
+        <!--Find Player-->
+        <scene sceneID="I21-ho-23Q">
+            <objects>
+                <navigationController id="3PL-qI-EtS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Find Player" image="magnifyingglass" catalog="system" id="93x-AX-s5c"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c6p-Qq-gM3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1ew-Cb-Gdt" kind="relationship" relationship="rootViewController" id="csG-P2-656"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TvU-TY-5Et" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3672" y="961"/>
         </scene>
         <!--Nosotros-->
         <scene sceneID="eug-BR-aiE">
@@ -857,10 +923,10 @@ Patricio Tena CSF A01027293                                         Maestro Dr. 
                     </tabBar>
                     <connections>
                         <segue destination="k3l-82-kXt" kind="relationship" relationship="viewControllers" id="Czi-rQ-dp0"/>
-                        <segue destination="1ew-Cb-Gdt" kind="relationship" relationship="viewControllers" id="fGd-Ph-AGh"/>
                         <segue destination="Deu-67-dc1" kind="relationship" relationship="viewControllers" id="RTD-n6-oyw"/>
                         <segue destination="j2X-Xm-uVF" kind="relationship" relationship="viewControllers" id="7Vw-8i-NJu"/>
                         <segue destination="i0F-U2-7Pl" kind="relationship" relationship="viewControllers" id="ohe-wf-mg6"/>
+                        <segue destination="3PL-qI-EtS" kind="relationship" relationship="viewControllers" id="4J8-ti-qL3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="STM-Ni-sdi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A91FF71287230405ABCA80F /* Pods_Duality_gg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEF880C79BD3388B60ADC1A /* Pods_Duality_gg.framework */; };
 		63146EC3270CC78300262644 /* app_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 63146EC2270CC78300262644 /* app_logo.png */; };
+		6314988E273386D9003A9C81 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6314988D273386D9003A9C81 /* UserDetailViewController.swift */; };
 		63149E2F270526B100FB77B0 /* profile_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 63149E2E270526B100FB77B0 /* profile_bg.png */; };
 		633428032701463E00D52040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633428022701463E00D52040 /* AppDelegate.swift */; };
 		633428052701463E00D52040 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633428042701463E00D52040 /* SceneDelegate.swift */; };
@@ -66,6 +67,7 @@
 
 /* Begin PBXFileReference section */
 		63146EC2270CC78300262644 /* app_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_logo.png; sourceTree = "<group>"; };
+		6314988D273386D9003A9C81 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		63149E2E270526B100FB77B0 /* profile_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_bg.png; sourceTree = "<group>"; };
 		633427FF2701463E00D52040 /* Duality.gg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duality.gg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		633428022701463E00D52040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				6334A5BA270A67AE00B9936A /* Users.swift */,
 				6334A5BD270A67F200B9936A /* UsersController.swift */,
 				63EE9A16270BBD4800137638 /* MatchHistory.swift */,
+				6314988D273386D9003A9C81 /* UserDetailViewController.swift */,
 				63EE9A19270BBD5400137638 /* MatchHistoryController.swift */,
 			);
 			path = Models;
@@ -435,6 +438,7 @@
 			files = (
 				6334A5B8270A664E00B9936A /* FindPlayerTableViewController.swift in Sources */,
 				63534A202705216F00018831 /* LoginViewController.swift in Sources */,
+				6314988E273386D9003A9C81 /* UserDetailViewController.swift in Sources */,
 				63EE9A1A270BBD5400137638 /* MatchHistoryController.swift in Sources */,
 				63EE9A1D270BBFBE00137638 /* MatchHistoryTableViewCell.swift in Sources */,
 				63D81FF6270671510004A743 /* Profile.swift in Sources */,
