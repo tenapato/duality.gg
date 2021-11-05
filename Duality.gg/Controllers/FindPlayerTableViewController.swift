@@ -42,12 +42,12 @@ class FindPlayerTableViewController: UITableViewController , UISearchResultsUpda
             }
             
         }
-        self.tableView.backgroundColor = UIColor.black
+        
         searchController.searchBar.barTintColor = UIColor.black
         searchController.searchBar.searchTextField.backgroundColor = UIColor.black
         searchController.searchBar.searchTextField.textColor = UIColor.white
+        
         searchController.searchResultsUpdater = self
-        searchController.dimsBackgroundDuringPresentation = false
         searchController.hidesNavigationBarDuringPresentation = false
         tableView.tableHeaderView = searchController.searchBar
         
