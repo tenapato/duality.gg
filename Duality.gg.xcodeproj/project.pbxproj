@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A91FF71287230405ABCA80F /* Pods_Duality_gg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEF880C79BD3388B60ADC1A /* Pods_Duality_gg.framework */; };
+		508D37532734EBF30041ED65 /* 9lVbaXq.png in Resources */ = {isa = PBXBuildFile; fileRef = 508D37522734EBF30041ED65 /* 9lVbaXq.png */; };
 		63146EC3270CC78300262644 /* app_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 63146EC2270CC78300262644 /* app_logo.png */; };
 		6314988E273386D9003A9C81 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6314988D273386D9003A9C81 /* UserDetailViewController.swift */; };
 		63149E2F270526B100FB77B0 /* profile_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 63149E2E270526B100FB77B0 /* profile_bg.png */; };
@@ -66,6 +67,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		508D37522734EBF30041ED65 /* 9lVbaXq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9lVbaXq.png; sourceTree = "<group>"; };
 		63146EC2270CC78300262644 /* app_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_logo.png; sourceTree = "<group>"; };
 		6314988D273386D9003A9C81 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		63149E2E270526B100FB77B0 /* profile_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_bg.png; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 		63342817270154FA00D52040 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				508D37522734EBF30041ED65 /* 9lVbaXq.png */,
 				63146EC2270CC78300262644 /* app_logo.png */,
 				63495BF6270BD9D5001F00DF /* battlep.png */,
 				639BBCC027062AB800ADD933 /* Profile */,
@@ -358,6 +361,7 @@
 				63146EC3270CC78300262644 /* app_logo.png in Resources */,
 				639BBCE627062AD700ADD933 /* red_rectangle.png in Resources */,
 				639BBCDD27062AD700ADD933 /* Breach.png in Resources */,
+				508D37532734EBF30041ED65 /* 9lVbaXq.png in Resources */,
 				6334280F2701463F00D52040 /* LaunchScreen.storyboard in Resources */,
 				639BBCD527062AD700ADD933 /* Reyna.png in Resources */,
 				639BBCD627062AD700ADD933 /* Match_rectangle.png in Resources */,
