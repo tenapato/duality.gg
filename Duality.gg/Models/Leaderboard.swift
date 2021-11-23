@@ -6,18 +6,23 @@
 //
 
 import Foundation
-// Leaderboard
+// MARK: - Leaderboard
 struct Leaderboard: Codable {
-    let actID: String
+    let affinity, actID: String
     let players: [Player]
+    let totalPlayers, immortalStartingPage, immortalStartingIndex, topTierRRThreshold: Int
+    let tierDetails: [String: TierDetail]
+    let startIndex: Int
+    let query: String
 
     enum CodingKeys: String, CodingKey {
+        case affinity
         case actID = "actId"
-        case players
+        case players, totalPlayers, immortalStartingPage, immortalStartingIndex, topTierRRThreshold, tierDetails, startIndex, query
     }
 }
 
-// Player
+// MARK: - Player
 struct Player: Codable {
     let puuid, gameName, tagLine: String
     let leaderboardRank, rankedRating, numberOfWINS, competitiveTier: Int
@@ -27,6 +32,11 @@ struct Player: Codable {
         case numberOfWINS = "numberOfWins"
         case competitiveTier
     }
+}
+
+// MARK: - TierDetail
+struct TierDetail: Codable {
+    let rankedRatingThreshold, startingPage, startingIndex: Int
 }
 
 typealias Leaderboards = [Leaderboard]

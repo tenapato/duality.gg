@@ -12,26 +12,23 @@ class LeaderboardController {
     
     func fetchLeaderboard(completion: @escaping (Result<Leaderboards,Error>)->Void){
         
-        var urlComponents = URLComponents(string: "http://martinmolina.com.mx/202113/tc2024/equipo6/leaderboard.json")!
+        let urlString = "https://dgxfkpkb4zk5c.cloudfront.net/leaderboards/affinity/NA/queue/competitive/act/97b6e739-44cc-ffa7-49ad-398ba502ceb0?startIndex=0&size=10"
+        let url = URL(string: urlString)!
 
+        let task = URLSession.shared.dataTask(with: url) {(data, resp, error) in
 
-        let task = URLSession.shared.dataTask(with: urlComponents.url!) { (data, response, error) in
-            let jsonDecoder = JSONDecoder()
-            if let data = data{
-                do{
-                    let leaderboard = try? jsonDecoder.decode(Leaderboards.self, from: data)
-                    completion(.success(leaderboard!))
-                }
-                catch{
-                    completion(.failure(error))
-                }
+            guard let data = data else {
+                print("data was nil")
+                return
             }
-            else {
-                completion(.failure(error as! Error))
+            guard let leaderboard = try? JSONDecoder().decode(Leaderboard.self, from: data) else {
+                print("something went wrong")
+                return
             }
             
+            print(leaderboard)
+            completion(.success([leaderboard]))
         }
-
         task.resume()
         
     }
