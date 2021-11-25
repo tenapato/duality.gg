@@ -3,11 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0A91FF71287230405ABCA80F /* Pods_Duality_gg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEF880C79BD3388B60ADC1A /* Pods_Duality_gg.framework */; };
+		0C1AE810274DE88E00F0BF48 /* WatchDuality WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0C1AE80F274DE88E00F0BF48 /* WatchDuality WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0C1AE816274DE88E00F0BF48 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1AE814274DE88E00F0BF48 /* Interface.storyboard */; };
+		0C1AE818274DE88E00F0BF48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C1AE817274DE88E00F0BF48 /* Assets.xcassets */; };
+		0C1AE81F274DE88E00F0BF48 /* WatchDuality WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0C1AE81E274DE88E00F0BF48 /* WatchDuality WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0C1AE824274DE88F00F0BF48 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AE823274DE88F00F0BF48 /* InterfaceController.swift */; };
+		0C1AE826274DE88F00F0BF48 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AE825274DE88F00F0BF48 /* ExtensionDelegate.swift */; };
+		0C1AE828274DE88F00F0BF48 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AE827274DE88F00F0BF48 /* ComplicationController.swift */; };
+		0C1AE82A274DE88F00F0BF48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C1AE829274DE88F00F0BF48 /* Assets.xcassets */; };
+		0C1AE83C274DF12100F0BF48 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C1AE83B274DF12100F0BF48 /* GoogleService-Info.plist */; };
+		0C1AE843274DF3E600F0BF48 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 0C1AE842274DF3E600F0BF48 /* FirebaseDatabase */; };
+		0C1AE84F274DFA9700F0BF48 /* ControladorDeDatos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AE84E274DFA9700F0BF48 /* ControladorDeDatos.swift */; };
+		0C2C0C74274E018A00387C63 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2C0C73274E018A00387C63 /* Profile.swift */; };
+		0C6E02EB274F0A230090A728 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E02EA274F0A230090A728 /* TableController.swift */; };
 		63146EC3270CC78300262644 /* app_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 63146EC2270CC78300262644 /* app_logo.png */; };
 		63149E2F270526B100FB77B0 /* profile_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 63149E2E270526B100FB77B0 /* profile_bg.png */; };
 		633428032701463E00D52040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633428022701463E00D52040 /* AppDelegate.swift */; };
@@ -64,7 +77,64 @@
 		63EFE6552707847F00FAD1F2 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EFE6542707847F00FAD1F2 /* CalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0C1AE811274DE88E00F0BF48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 633427F72701463E00D52040 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C1AE80E274DE88E00F0BF48;
+			remoteInfo = "WatchDuality WatchKit App";
+		};
+		0C1AE820274DE88E00F0BF48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 633427F72701463E00D52040 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C1AE81D274DE88E00F0BF48;
+			remoteInfo = "WatchDuality WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0C1AE82E274DE88F00F0BF48 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0C1AE810274DE88E00F0BF48 /* WatchDuality WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1AE831274DE88F00F0BF48 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0C1AE81F274DE88E00F0BF48 /* WatchDuality WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0C1AE80C274DE88E00F0BF48 /* WatchDuality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchDuality.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C1AE80F274DE88E00F0BF48 /* WatchDuality WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchDuality WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C1AE815274DE88E00F0BF48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0C1AE817274DE88E00F0BF48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C1AE819274DE88E00F0BF48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C1AE81E274DE88E00F0BF48 /* WatchDuality WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchDuality WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C1AE823274DE88F00F0BF48 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0C1AE825274DE88F00F0BF48 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		0C1AE827274DE88F00F0BF48 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		0C1AE829274DE88F00F0BF48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C1AE82B274DE88F00F0BF48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C1AE83B274DF12100F0BF48 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0C1AE84E274DFA9700F0BF48 /* ControladorDeDatos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorDeDatos.swift; sourceTree = "<group>"; };
+		0C2C0C73274E018A00387C63 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		0C6E02EA274F0A230090A728 /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		63146EC2270CC78300262644 /* app_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_logo.png; sourceTree = "<group>"; };
 		63149E2E270526B100FB77B0 /* profile_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_bg.png; sourceTree = "<group>"; };
 		633427FF2701463E00D52040 /* Duality.gg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duality.gg.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +197,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0C1AE81B274DE88E00F0BF48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1AE843274DF3E600F0BF48 /* FirebaseDatabase in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		633427FC2701463E00D52040 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,10 +216,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C1AE813274DE88E00F0BF48 /* WatchDuality WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				0C1AE814274DE88E00F0BF48 /* Interface.storyboard */,
+				0C1AE817274DE88E00F0BF48 /* Assets.xcassets */,
+				0C1AE819274DE88E00F0BF48 /* Info.plist */,
+			);
+			path = "WatchDuality WatchKit App";
+			sourceTree = "<group>";
+		};
+		0C1AE822274DE88F00F0BF48 /* WatchDuality WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0C1AE83B274DF12100F0BF48 /* GoogleService-Info.plist */,
+				0C1AE823274DE88F00F0BF48 /* InterfaceController.swift */,
+				0C1AE825274DE88F00F0BF48 /* ExtensionDelegate.swift */,
+				0C1AE827274DE88F00F0BF48 /* ComplicationController.swift */,
+				0C1AE829274DE88F00F0BF48 /* Assets.xcassets */,
+				0C1AE82B274DE88F00F0BF48 /* Info.plist */,
+				0C1AE84E274DFA9700F0BF48 /* ControladorDeDatos.swift */,
+				0C2C0C73274E018A00387C63 /* Profile.swift */,
+				0C6E02EA274F0A230090A728 /* TableController.swift */,
+			);
+			path = "WatchDuality WatchKit Extension";
+			sourceTree = "<group>";
+		};
 		633427F62701463E00D52040 = {
 			isa = PBXGroup;
 			children = (
 				633428012701463E00D52040 /* Duality.gg */,
+				0C1AE813274DE88E00F0BF48 /* WatchDuality WatchKit App */,
+				0C1AE822274DE88F00F0BF48 /* WatchDuality WatchKit Extension */,
 				633428002701463E00D52040 /* Products */,
 				86F04812AF976BE107AB69BA /* Pods */,
 				9AB4030ECF01CD70DA4393E0 /* Frameworks */,
@@ -152,6 +258,9 @@
 			isa = PBXGroup;
 			children = (
 				633427FF2701463E00D52040 /* Duality.gg.app */,
+				0C1AE80C274DE88E00F0BF48 /* WatchDuality.app */,
+				0C1AE80F274DE88E00F0BF48 /* WatchDuality WatchKit App.app */,
+				0C1AE81E274DE88E00F0BF48 /* WatchDuality WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -294,6 +403,60 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0C1AE80B274DE88E00F0BF48 /* WatchDuality */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C1AE836274DE88F00F0BF48 /* Build configuration list for PBXNativeTarget "WatchDuality" */;
+			buildPhases = (
+				0C1AE80A274DE88E00F0BF48 /* Resources */,
+				0C1AE82E274DE88F00F0BF48 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C1AE812274DE88E00F0BF48 /* PBXTargetDependency */,
+			);
+			name = WatchDuality;
+			productName = WatchDuality;
+			productReference = 0C1AE80C274DE88E00F0BF48 /* WatchDuality.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		0C1AE80E274DE88E00F0BF48 /* WatchDuality WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C1AE835274DE88F00F0BF48 /* Build configuration list for PBXNativeTarget "WatchDuality WatchKit App" */;
+			buildPhases = (
+				0C1AE80D274DE88E00F0BF48 /* Resources */,
+				0C1AE831274DE88F00F0BF48 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C1AE821274DE88E00F0BF48 /* PBXTargetDependency */,
+			);
+			name = "WatchDuality WatchKit App";
+			productName = "WatchDuality WatchKit App";
+			productReference = 0C1AE80F274DE88E00F0BF48 /* WatchDuality WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0C1AE81D274DE88E00F0BF48 /* WatchDuality WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C1AE834274DE88F00F0BF48 /* Build configuration list for PBXNativeTarget "WatchDuality WatchKit Extension" */;
+			buildPhases = (
+				0C1AE81A274DE88E00F0BF48 /* Sources */,
+				0C1AE81B274DE88E00F0BF48 /* Frameworks */,
+				0C1AE81C274DE88E00F0BF48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchDuality WatchKit Extension";
+			packageProductDependencies = (
+				0C1AE842274DF3E600F0BF48 /* FirebaseDatabase */,
+			);
+			productName = "WatchDuality WatchKit Extension";
+			productReference = 0C1AE81E274DE88E00F0BF48 /* WatchDuality WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		633427FE2701463E00D52040 /* Duality.gg */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 633428132701463F00D52040 /* Build configuration list for PBXNativeTarget "Duality.gg" */;
@@ -322,6 +485,15 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					0C1AE80B274DE88E00F0BF48 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					0C1AE80E274DE88E00F0BF48 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					0C1AE81D274DE88E00F0BF48 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					633427FE2701463E00D52040 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -336,16 +508,47 @@
 				Base,
 			);
 			mainGroup = 633427F62701463E00D52040;
+			packageReferences = (
+				0C1AE841274DF3E600F0BF48 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 633428002701463E00D52040 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				633427FE2701463E00D52040 /* Duality.gg */,
+				0C1AE80B274DE88E00F0BF48 /* WatchDuality */,
+				0C1AE80E274DE88E00F0BF48 /* WatchDuality WatchKit App */,
+				0C1AE81D274DE88E00F0BF48 /* WatchDuality WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0C1AE80A274DE88E00F0BF48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1AE80D274DE88E00F0BF48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1AE818274DE88E00F0BF48 /* Assets.xcassets in Resources */,
+				0C1AE816274DE88E00F0BF48 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1AE81C274DE88E00F0BF48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1AE82A274DE88F00F0BF48 /* Assets.xcassets in Resources */,
+				0C1AE83C274DF12100F0BF48 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		633427FD2701463E00D52040 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -429,6 +632,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0C1AE81A274DE88E00F0BF48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6E02EB274F0A230090A728 /* TableController.swift in Sources */,
+				0C1AE826274DE88F00F0BF48 /* ExtensionDelegate.swift in Sources */,
+				0C2C0C74274E018A00387C63 /* Profile.swift in Sources */,
+				0C1AE824274DE88F00F0BF48 /* InterfaceController.swift in Sources */,
+				0C1AE828274DE88F00F0BF48 /* ComplicationController.swift in Sources */,
+				0C1AE84F274DFA9700F0BF48 /* ControladorDeDatos.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		633427FB2701463E00D52040 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -461,7 +677,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0C1AE812274DE88E00F0BF48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C1AE80E274DE88E00F0BF48 /* WatchDuality WatchKit App */;
+			targetProxy = 0C1AE811274DE88E00F0BF48 /* PBXContainerItemProxy */;
+		};
+		0C1AE821274DE88E00F0BF48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C1AE81D274DE88E00F0BF48 /* WatchDuality WatchKit Extension */;
+			targetProxy = 0C1AE820274DE88E00F0BF48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		0C1AE814274DE88E00F0BF48 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C1AE815274DE88E00F0BF48 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		633428082701463E00D52040 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -481,6 +718,110 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0C1AE82C274DE88F00F0BF48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.a01657028.WatchDuality;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0C1AE82D274DE88F00F0BF48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.a01657028.WatchDuality;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0C1AE82F274DE88F00F0BF48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = WatchDuality_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchDuality WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.a01657028.WatchDuality.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		0C1AE830274DE88F00F0BF48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = WatchDuality_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchDuality WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.a01657028.WatchDuality.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		0C1AE832274DE88F00F0BF48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "WatchDuality WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.a01657028.WatchDuality.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		0C1AE833274DE88F00F0BF48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "WatchDuality WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.a01657028.WatchDuality.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
 		633428112701463F00D52040 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -638,6 +979,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0C1AE834274DE88F00F0BF48 /* Build configuration list for PBXNativeTarget "WatchDuality WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C1AE832274DE88F00F0BF48 /* Debug */,
+				0C1AE833274DE88F00F0BF48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C1AE835274DE88F00F0BF48 /* Build configuration list for PBXNativeTarget "WatchDuality WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C1AE82F274DE88F00F0BF48 /* Debug */,
+				0C1AE830274DE88F00F0BF48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C1AE836274DE88F00F0BF48 /* Build configuration list for PBXNativeTarget "WatchDuality" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C1AE82C274DE88F00F0BF48 /* Debug */,
+				0C1AE82D274DE88F00F0BF48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		633427FA2701463E00D52040 /* Build configuration list for PBXProject "Duality.gg" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -657,6 +1025,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0C1AE841274DF3E600F0BF48 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0C1AE842274DF3E600F0BF48 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C1AE841274DF3E600F0BF48 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 633427F72701463E00D52040 /* Project object */;
 }
