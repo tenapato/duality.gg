@@ -8,18 +8,24 @@
 import Foundation
 
 // UserElement
-struct UserElement{
+struct users{
     let gameName: String
-    let rankedRating: Int
+    let rankedRating: String
+    let tagLine: String
+    
+    
 
-    init(gameName:String, rankedRating:Int){
+    init(gameName:String, rankedRating:String, tagLine:String){
         
         self.gameName = gameName
         self.rankedRating = rankedRating
+        self.tagLine = tagLine
+       
+      
     }
 
 
 }
 
 
-typealias User = [UserElement]
+typealias User = [users]

@@ -11,9 +11,9 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
     @IBOutlet weak var table: WKInterfaceTable!
-    var datos = [UserElement]()
+    var datos = [users]()
     var profileController = ControladorDatos()
-    func updateGUI(lista_user: [UserElement]){
+    func updateGUI(lista_user: [users]){
         DispatchQueue.main.async {
             self.datos = lista_user
             self.table.setNumberOfRows(self.datos.count, withRowType: "lines")
