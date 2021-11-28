@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import FirebaseDatabase
 
 class ProfileViewController: UIViewController {
     var userLoggedIn = true
@@ -17,6 +18,7 @@ class ProfileViewController: UIViewController {
     
     var datos = [UserElement]()
     var userControlador = ProfileController()
+    var ref: DatabaseReference!
     
     @IBOutlet weak var userName: UILabel!
     
@@ -63,7 +65,15 @@ class ProfileViewController: UIViewController {
             self.userName.text = String(self.datos[0].gameName)
             self.rankedRating.text = String(self.datos[0].rankedRating)
             self.userTag.text = String(self.datos[0].tagLine)
-            
+            self.ref = Database.database().reference()
+            self.ref.child("users").setValue(["gameName": String(self.datos[0].gameName), "rankedRaiting":String(self.datos[0].rankedRating) ,"tagLine":String(self.datos[0].tagLine)     ]) {
+                          (error:Error?, ref:DatabaseReference) in
+                if let error = error {
+                    print("Data could not be saved: \(error).")
+                } else {
+                    print("Data saved successfully!")
+                }
+            }
             if(self.datos[0].rankedRating <= 300){
                 self.userBadge.image = UIImage(named: "Iron.png");
             }
