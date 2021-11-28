@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>147850350283-t4jdtar1vakdtllsiad1geehe4f2l9ae.apps.googleusercontent.com</string>
+	<string>598269676662-5e6vd29ee809d9s0808t4h7apq8l5p24.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.147850350283-t4jdtar1vakdtllsiad1geehe4f2l9ae</string>
+	<string>com.googleusercontent.apps.598269676662-5e6vd29ee809d9s0808t4h7apq8l5p24</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAYA2kdQUydPzs8ytDiLddSJAAbo_nMgUY</string>
+	<string>AIzaSyDkY-sNbZVz8KgyBHa_m-sQOXePfGcoUcs</string>
 	<key>GCM_SENDER_ID</key>
-	<string>147850350283</string>
+	<string>598269676662</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>team6.Duality-gg</string>
 	<key>PROJECT_ID</key>
-	<string>duality-gg</string>
+	<string>duality-gg-e8763</string>
 	<key>STORAGE_BUCKET</key>
-	<string>duality-gg.appspot.com</string>
+	<string>duality-gg-e8763.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:147850350283:ios:e5cab9849adc7e85d1154e</string>
+	<string>1:598269676662:ios:ebc899f8ab32703883e357</string>
+	<key>DATABASE_URL</key>
+	<string>https://duality-gg-e8763-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>
