@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  fotosS4
-//
-//  Created by ITESM on 11/7/17.
-//  Copyright © 2017 Tecnologico de Monterrey. All rights reserved.
-//
 
 import UIKit
 import CoreML

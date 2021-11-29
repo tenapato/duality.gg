@@ -188,32 +188,35 @@
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lc7-Kh-maz">
-                                <rect key="frame" x="-8" y="114" width="430" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="430" id="Cbe-dU-IEM"/>
-                                    <constraint firstAttribute="height" constant="50" id="u25-8h-qCH"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lc7-Kh-maz">
+                                <rect key="frame" x="20" y="114" width="374" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="About">
+                                    <color key="titleColor" systemColor="systemGray6Color"/>
+                                </state>
                                 <connections>
                                     <segue destination="Cv8-yy-VhX" kind="show" id="GF6-17-J4o"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maG-B8-xWb">
-                                <rect key="frame" x="-8" y="165" width="430" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="oIp-vk-VNN"/>
-                                    <constraint firstAttribute="width" constant="430" id="pWf-vV-4zB"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maG-B8-xWb">
+                                <rect key="frame" x="20" y="172" width="374" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Map">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="xJ4-83-yUB" kind="show" id="vka-JK-nLU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOV-e0-oP6">
-                                <rect key="frame" x="184" y="377" width="76" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOV-e0-oP6">
+                                <rect key="frame" x="20" y="230" width="374" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Skin identifier">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="HCz-6A-imA" kind="show" id="KOF-dr-nle"/>
                                 </connections>
@@ -221,12 +224,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Aoc-Fp-YcV"/>
                         <color key="backgroundColor" red="0.08235294118" green="0.10980392160000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="maG-B8-xWb" firstAttribute="centerX" secondItem="daa-Xa-bJf" secondAttribute="centerX" id="Tws-6E-v97"/>
-                            <constraint firstItem="maG-B8-xWb" firstAttribute="top" secondItem="lc7-Kh-maz" secondAttribute="bottom" constant="1" id="alZ-X8-a6b"/>
-                            <constraint firstItem="lc7-Kh-maz" firstAttribute="centerX" secondItem="daa-Xa-bJf" secondAttribute="centerX" id="kZ2-hp-h8M"/>
-                            <constraint firstItem="lc7-Kh-maz" firstAttribute="top" secondItem="Aoc-Fp-YcV" secondAttribute="top" constant="70" id="lBd-9O-7S0"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="OqL-kE-DCW"/>
                 </viewController>
