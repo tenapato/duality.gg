@@ -29,7 +29,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate  {
         
         let hQ = MKPointAnnotation()
         hQ.coordinate = centro
-        hQ.title = "Riota Games HQ"
+        hQ.title = "Riots Games HQ"
         hQ.subtitle = "Creator of Valorant"
         mapa.addAnnotation(hQ)
         

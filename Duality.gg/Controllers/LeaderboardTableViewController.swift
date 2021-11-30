@@ -74,7 +74,7 @@ class LeaderboardTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "zelda", for: indexPath)
         
                 // Configure the cell...
-        cell.textLabel?.textColor = UIColor.black
+        //cell.textLabel?.textColor = UIColor.black
         //cell.backgroundColor = UIColor.clear
         //cell.textLabel?.text = datos[indexPath.row]
         //cell.textLabel?.text = datos[indexPath.row].players[0].gameName
