@@ -86,7 +86,7 @@ class FindPlayerTableViewController: UITableViewController , UISearchResultsUpda
         let cell = tableView.dequeueReusableCell(withIdentifier: "celdaUsuarios", for: indexPath)
 
         // Configure the cell...
-        cell.backgroundColor = UIColor.black
+        //cell.backgroundColor = UIColor.black
         cell.textLabel?.textColor = UIColor.white
         cell.textLabel?.text = datosfilt[indexPath.row].gameName
         return cell
